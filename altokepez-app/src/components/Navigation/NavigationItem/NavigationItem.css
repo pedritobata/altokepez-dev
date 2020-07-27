@@ -8,7 +8,8 @@
 .nav-item a{
     font-family: inherit;
     font-style: normal;
-    font-weight: 300;
-    font-size: 1.3rem;
-    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: black;
 }
