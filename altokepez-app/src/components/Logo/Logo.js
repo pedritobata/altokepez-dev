@@ -5,7 +5,7 @@ import './Logo.css';
 const Logo = props => {
 
     return <div className="logo">
-        <img src={altokepezLogo} />
+        <img src={altokepezLogo}/>
     </div>
 }
 

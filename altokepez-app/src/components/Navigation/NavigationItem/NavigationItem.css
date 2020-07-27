@@ -1,15 +1,15 @@
 
-.nav-item {
+/* .nav-item {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-}
+} */
 
 .nav-item a{
     font-family: inherit;
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding: 0 10px;
+    font-weight: 400;
+    font-size: 1.35rem;
+    padding: 0 20px;
     color: black;
 }
