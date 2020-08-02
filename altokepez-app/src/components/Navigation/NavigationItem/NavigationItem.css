@@ -5,11 +5,34 @@
     margin: 0 10px;
 } */
 
+
 .nav-item a{
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.35rem;
-    padding: 0 20px;
-    color: black;
+   
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.02rem;
+        padding: 0 20px;
+        color: black;
+        text-transform: uppercase;
+        text-decoration:  none;
 }
+
+li.nav-item a:hover{
+        color: var(--custom-primary);
+}
+
+li.nav-item a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+li.nav-item a:after{
+    border-bottom: 1px solid var(--custom-primary);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+}
+

@@ -5,6 +5,7 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 import CatchyBox from "../../CatchyBox/CatchyBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
+import Icon from '../../Icon/Icon';
 
 const Toolbar = (props) => {
   return (
@@ -16,7 +17,25 @@ const Toolbar = (props) => {
             <NavigationItems />
           </nav>
         </div>
-        <div className="col"></div>
+        <div className="col d-flex justify-content-sm-around align-items-sm-center">
+          <Icon 
+            // style="text-primary"
+            color="black"
+            iconName="person"
+            size={26}
+          />
+          <Icon 
+              color="black"
+              iconName="heart"
+              size={23}
+          />
+          <Icon 
+            color="black"
+            iconName="cart"
+            size={24}
+          />
+          <CatchyBox text="Delivery" />
+        </div>
       </div>
     </header>
   );

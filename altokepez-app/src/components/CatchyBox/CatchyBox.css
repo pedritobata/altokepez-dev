@@ -1,0 +1,13 @@
+
+.catchy-box{
+    background: yellow;
+    padding: .8rem;
+    border: 1px solid #F72E00;
+    cursor: pointer;
+}
+
+.catchy-box span{
+    color: #F72E00;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
