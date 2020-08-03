@@ -6,33 +6,36 @@ import CatchyBox from "../../CatchyBox/CatchyBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
 import Icon from '../../Icon/Icon';
+import { mainIconDefaultSize } from '../../../shared/commons/css-constants';
 
 const Toolbar = (props) => {
   return (
     <header className="container container-v1">
       <div className="row bar border-bottom-0 align-items-center">
-        <div className="col"><Logo /></div>
+        <div className="col-3"><Logo /></div>
         <div className="col-6">
           <nav>
             <NavigationItems />
           </nav>
         </div>
-        <div className="col d-flex justify-content-sm-around align-items-sm-center">
+        <div className="col-3 d-flex justify-content-center align-items-center">
           <Icon 
-            // style="text-primary"
             color="black"
             iconName="person"
-            size={26}
+            hiddenMobile
+            size={`calc(${mainIconDefaultSize} + 0.3rem)`}
           />
           <Icon 
               color="black"
               iconName="heart"
-              size={23}
+              hidden
+              size={mainIconDefaultSize}
           />
           <Icon 
             color="black"
             iconName="cart"
-            size={24}
+            hidden
+            size={mainIconDefaultSize}
           />
           <CatchyBox text="Delivery" />
         </div>

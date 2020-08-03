@@ -3,3 +3,22 @@
 .bicon{
     cursor: pointer;
 }
+
+.disapear, .disapear-mobile{
+    display: inline-block;
+}
+
+
+
+@media screen and (max-width: 937px){
+    .disapear{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .disapear-mobile{
+        display: none;
+    }
+}
+

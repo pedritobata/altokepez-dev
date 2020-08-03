@@ -1,0 +1,1 @@
+export const mainIconDefaultSize = "1.5rem";

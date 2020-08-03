@@ -4,7 +4,7 @@ import './CatchyBox.css';
 const CatchyBox = props => {
 
     return <div className="catchy-box">
-        <span>{props.text}</span>
+        {props.text}
     </div>
 }
 

@@ -1,13 +1,19 @@
 
-.catchy-box{
-    background: yellow;
-    padding: .8rem;
-    border: 1px solid #F72E00;
-    cursor: pointer;
+.catchy-box:hover,
+.catchy-box:active{
+    background: #F72E00;
+    color: #fff;
 }
 
-.catchy-box span{
+.catchy-box{
     color: #F72E00;
+    padding: .7rem;
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: inherit;
+    background: #fff;
+    border: 1px solid #F72E00;
+    cursor: pointer;
+    transition: .2s;
 }
+

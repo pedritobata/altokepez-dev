@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: SofiaPro;
+    src: url("../src/assets/fonts/sofiapro-light.otf");
+}
+
 :root{
     --custom-primary: #F72E00;
 }
@@ -12,8 +17,26 @@ html {
 }
 
 body {
-    // font-family: sofia-pro, sans-serif;
+    font-family: SofiaPro, sans-serif;
 }
+
+@media screen and (max-width: 1039px){
+    html{
+        font-size: 13.5px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    html{
+        font-size: 12px;
+    }
+}
+
+/* @media screen and (max-width: 470px){
+    html{
+        font-size: 11px;
+    }
+} */
 
 
 @import url("../node_modules/bootstrap/scss/bootstrap.scss");

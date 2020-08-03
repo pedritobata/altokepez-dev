@@ -18,14 +18,16 @@ const Icon = props => {
 
     
 
-    return (BIcon ? <BIcon
-            className="bicon"
-            color={props.color}
-            alt={props.iconName} 
-            size={props.size}
-            // width={props.width} 
-            // height={props.height} 
-            title={props.iconName}/> : <div></div>);
+    return (
+      BIcon ? <div className={`bicon px-3 ${props.hidden ? 'disapear' : ''}
+      ${props.hiddenMobile ? 'disapear-mobile' : ''}`}>
+      <BIcon
+      color={props.color}
+      alt={props.iconName} 
+      size={props.size}
+      // width={props.width} 
+      // height={props.height} 
+      title={props.iconName}/></div> : <div></div>);
 }
 
 export default Icon;
