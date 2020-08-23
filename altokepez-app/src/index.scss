@@ -9,7 +9,8 @@
 }
 
 :root{
-    --custom-primary: #F72E00;
+    --custom-primary: #d46802;
+    --custom-secondary: #3131fa;
 }
 
 html {
@@ -20,15 +21,15 @@ body {
     font-family: SofiaPro, sans-serif;
 }
 
-@media screen and (max-width: 1039px){
-    html{
-        font-size: 13.5px;
-    }
-}
+// @media screen and (max-width: 1039px){
+//     html{
+//         font-size: 15px;
+//     }
+// }
 
 @media screen and (max-width: 640px){
     html{
-        font-size: 12px;
+        font-size: 14.5px;
     }
 }
 
