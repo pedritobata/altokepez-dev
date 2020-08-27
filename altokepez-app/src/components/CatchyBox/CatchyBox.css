@@ -1,18 +1,18 @@
 
 .catchy-box:hover,
 .catchy-box:active{
-    background: #F72E00;
-    color: #fff;
+    background: #fff;
+    color: #F72E00;
 }
 
 .catchy-box{
-    color: #F72E00;
+    color: #fff;
     padding: .7rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: bold;
     font-family: inherit;
-    background: #fff;
-    border: 1px solid #F72E00;
+    background: #F72E00;
+    border: 2px solid #F72E00;
     cursor: pointer;
     transition: .2s;
 }
