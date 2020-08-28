@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
 import Icon from '../../Icon/Icon';
 import { mainIconDefaultSize } from '../../../shared/commons/css-constants';
+import { NavLink } from 'react-router-dom';
 
 const Toolbar = (props) => {
   return (
@@ -19,12 +20,14 @@ const Toolbar = (props) => {
           </nav>
         </div>
         <div className="col-3 d-flex justify-content-center align-items-center">
-          <Icon 
-            color="black"
-            iconName="person"
-            hiddenMobile
-            size={`calc(${mainIconDefaultSize} + 0.3rem)`}
-          />
+          <NavLink to="/login" exact>
+            <Icon 
+              color="black"
+              iconName="person"
+              hiddenMobile
+              size={`calc(${mainIconDefaultSize} + 0.3rem)`}
+            />
+          </NavLink>
           <Icon 
               color="black"
               iconName="heart"
