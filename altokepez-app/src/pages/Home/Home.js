@@ -12,7 +12,7 @@ class Home extends React.Component{
 
 const mapStateToProps = state => {
     return {
-        userName: state.userName
+        userName: state.auth.userName
     }
 }
 
