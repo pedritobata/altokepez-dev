@@ -1,3 +1,3 @@
 export {
     login
-}from './actions';
+}from './auth';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { connect } from 'react-redux';
-import * as actionTypes from '../../store/actions/actions';
+import * as actionTypes from '../../store/actions/actionTypes';
 import * as actionCreators from '../../store/actions/index';
 
 const Login = (props) => {
