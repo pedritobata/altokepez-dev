@@ -11,7 +11,8 @@ const saveName = (name) => {
 }
 
 export const login = (userName) => {
-    return dispatch => {
+    return (dispatch, getState) => {
+        console.log("userName: ",getState().auth.userName);
         //codigo asincrono
         setTimeout(() => {
             dispatch(saveName(userName));
