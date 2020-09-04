@@ -1,3 +1,3 @@
 export {
-    login
+    auth
 }from './auth';

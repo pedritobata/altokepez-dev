@@ -6,13 +6,13 @@ class Home extends React.Component{
 
     render(){
 
-        return <h2>Welcome {this.props.userName}</h2>
+        return <h2>Welcome {this.props.userEmail}</h2>
     }
 }
 
 const mapStateToProps = state => {
     return {
-        userName: state.auth.userName
+        userEmail: state.auth.email
     }
 }
 

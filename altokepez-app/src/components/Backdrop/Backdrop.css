@@ -1,0 +1,10 @@
+.backdrop{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(33, 37, 41, 0.8);
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

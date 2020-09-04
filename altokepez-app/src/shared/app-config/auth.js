@@ -1,1 +1,1 @@
-export const AUTH_API_WEB_KEY = "";
+export const AUTH_API_WEB_KEY = "AIzaSyASlCahqg6zntQlLS1hxRMdZMRjF8TTog0";

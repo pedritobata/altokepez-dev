@@ -1,38 +1,59 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { connect } from 'react-redux';
-import * as actionTypes from '../../store/actions/actionTypes';
 import * as actionCreators from '../../store/actions/index';
+import Backdrop from '../../components/Backdrop/Backdrop';
 
 const Login = (props) => {
 
-    const [ name, setName ] = useState("");
+    const [ user, setUser ] = useState("");
+    const [ password, setPassword ] = useState("");
 
-    const changeInputHandler = (event) => {
-        setName(event.target.value);
-        //console.log(event.target.value);
+    const changeInputHandler = (event, element) => {
+        if(element === 'user')
+            setUser(event.target.value);
+        
+        if(element === 'pass')
+            setPassword(event.target.value);   
+
     }
 
 
     const loginHandler = (event) => {
         event.preventDefault();
-        props.onSubmitLogin(name);
+        props.onSubmitAuth(user, password, false);
     }
 
-    return <div>
-        <h1>Please Sign in</h1>
-        <form onSubmit={loginHandler}>
-            <input type="text" onChange={changeInputHandler} value={name} placeholder="Ingrese nombre de usuario"/>
-            <input type="password" placeholder="Ingrese su contraseña"/>
-            <input type="submit"  value="Enviar"/>
-        </form>
+    return <div className="login">
+        <Backdrop  />
+        <section className="login__container">
+            <h1 className="login__title">Please Sign in</h1>
+            <hr />
+            <p className="login__phrase">Qué gusto tenerte de vuelta!</p>
+            <form onSubmit={loginHandler} className="login__form">
+                <input type="text" onChange={(event) => changeInputHandler(event,"user")} value={user} placeholder="Email"/>
+                <input type="password" onChange={(event) => changeInputHandler(event,"pass")} value={password} placeholder="Contraseña"/>
+                <small>Olvidé mi contraseña</small>
+                <button type="submit">Enviar</button>
+            </form>
+            <div className="login__registro">
+                <p>No tienes una cuenta?</p><small>Registrarme</small>
+            </div>
+        </section>
+        {props.authError && <p>{props.authError.message}</p>}
     </div>
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onSubmitLogin: (userName) => dispatch(actionCreators.login(userName))
+        onSubmitAuth: (user, pass, isSignup) => dispatch(actionCreators.auth(user, pass, isSignup))
     }
 }
 
-export default connect(null, mapDispatchToProps)(Login);
+const mapStateToProps = state => {
+    return {
+        authError: state.auth.error
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

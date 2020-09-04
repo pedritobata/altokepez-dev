@@ -1,15 +1,24 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialAuthState = {
-    userName: ""
+    email: "",
+    tokenId: "",
+    error: null
 }
 
 export const authReducer = (state = initialAuthState, action) => {
     switch(action.type){
-        case actionTypes.LOGIN:
+        case actionTypes.AUTH_SUCCESS:
             return {
                 ...state,
-                userName: action.name
+                error: null,
+                email: action.email,
+                tokenId: action.token
+            };
+        case actionTypes.AUTH_FAIL:
+            return {
+                ...state,
+                error: action.error
             };
         default:
             return state;
