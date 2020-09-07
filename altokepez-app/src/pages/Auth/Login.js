@@ -8,6 +8,7 @@ const Login = (props) => {
 
     const [ user, setUser ] = useState("");
     const [ password, setPassword ] = useState("");
+    
 
     const changeInputHandler = (event, element) => {
         if(element === 'user')
@@ -17,15 +18,16 @@ const Login = (props) => {
             setPassword(event.target.value);   
 
     }
-
+   
 
     const loginHandler = (event) => {
         event.preventDefault();
         props.onSubmitAuth(user, password, false);
     }
 
-    return <div className="login">
-        <Backdrop  />
+    return (
+        <div className="login">
+        <Backdrop clicked={props.backdropClicked} />
         <section className="login__container">
             <h1 className="login__title">Please Sign in</h1>
             <hr />
@@ -41,7 +43,8 @@ const Login = (props) => {
             </div>
         </section>
         {props.authError && <p>{props.authError.message}</p>}
-    </div>
+    </div> 
+    );
 }
 
 const mapDispatchToProps = (dispatch) => {

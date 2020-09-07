@@ -20,11 +20,12 @@ const Toolbar = (props) => {
           </nav>
         </div>
         <div className="col-3 d-flex justify-content-center align-items-center">
-          <NavLink to="/login" exact>
+          <NavLink to="#" exact>
             <Icon 
               color="black"
               iconName="person"
               hiddenMobile
+              clicked={props.clicked}
               size={`calc(${mainIconDefaultSize} + 0.3rem)`}
             />
           </NavLink>

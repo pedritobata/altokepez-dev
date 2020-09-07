@@ -1,10 +1,10 @@
 import React from 'react';
 import './Backdrop.css';
 
-const Backdrop = () => {
+const Backdrop = (props) => {
 
     return (
-        <div className="backdrop">
+        <div className="backdrop" onClick={props.clicked}>
             
         </div>
     );

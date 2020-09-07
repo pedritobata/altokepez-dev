@@ -20,7 +20,8 @@ const Icon = props => {
 
     return (
       BIcon ? <div className={`bicon px-3 ${props.hidden ? 'disapear' : ''}
-      ${props.hiddenMobile ? 'disapear-mobile' : ''}`}>
+      ${props.hiddenMobile ? 'disapear-mobile' : ''}`}
+      onClick={props.clicked}>
       <BIcon
       color={props.color}
       alt={props.iconName} 
