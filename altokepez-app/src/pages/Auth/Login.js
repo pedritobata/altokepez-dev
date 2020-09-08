@@ -41,8 +41,8 @@ const Login = (props) => {
             <div className="login__registro">
                 <p>No tienes una cuenta?</p><small>Registrarme</small>
             </div>
-        </section>
         {props.authError && <p>{props.authError.message}</p>}
+        </section>
     </div> 
     );
 }

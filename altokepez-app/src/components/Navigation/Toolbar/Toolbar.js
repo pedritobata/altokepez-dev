@@ -25,7 +25,7 @@ const Toolbar = (props) => {
               color="black"
               iconName="person"
               hiddenMobile
-              clicked={props.clicked}
+              clicked={props.loginClicked}
               size={`calc(${mainIconDefaultSize} + 0.3rem)`}
             />
           </NavLink>

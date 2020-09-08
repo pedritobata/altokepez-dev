@@ -6,9 +6,9 @@
     z-index: 0;
     animation: .4s showup-effect 1;
     /* animation-delay: .1s; */
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
+    left: 0; 
 }
 
 @keyframes showup-effect{

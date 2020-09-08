@@ -1,20 +1,39 @@
 
 .login{
-    position: absolute;
-    top: 0;
-    left: 0;
+    
 }
 
 .login__container{
-    position: absolute;
+    position: absolute; 
     top: 16vh;
-    left: 33vw;
+    right: 33%;
     background-color: white;
     z-index: 2;
     min-width: 500px;
     padding: 65px;
     margin: auto;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 1199px){
+    .login__container{
+        right: 28%;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media (max-width: 1000px){
+    .login__container{
+        right: 22%;
+        transition: all .6s ease-in-out;
+    }
+}
+
+@media (max-width: 890px){
+    .login__container{
+        right: 18%;
+        transition: all .6s ease-in-out;
+    }
 }
 
 .login__title{

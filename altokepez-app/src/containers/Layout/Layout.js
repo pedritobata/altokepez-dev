@@ -12,7 +12,7 @@ const Layout = (props) => {
 
   return (
     <div className="layout">
-      <Toolbar clicked={showBackdropHandler} />
+      <Toolbar loginClicked={showBackdropHandler} />
      {showLogin ? <Login backdropClicked={showBackdropHandler} /> : null}
 
       {props.children}
