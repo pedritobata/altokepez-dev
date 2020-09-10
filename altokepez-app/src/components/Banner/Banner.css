@@ -1,0 +1,10 @@
+.banner {
+  display: flex;
+  height: auto;
+}
+
+.banner__dish {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}

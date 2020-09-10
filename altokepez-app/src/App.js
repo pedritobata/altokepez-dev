@@ -13,10 +13,7 @@ function App() {
     <div className="App">
       <Layout>
         <Switch>
-          {/* <Route path="/login">
-            <Login />
-          </Route> */}
-          <Route path="/">
+          <Route path="/home">
             <Home />
           </Route>
         </Switch> 

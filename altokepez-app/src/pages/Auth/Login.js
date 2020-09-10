@@ -36,7 +36,7 @@ const Login = (props) => {
                 <input type="text" onChange={(event) => changeInputHandler(event,"user")} value={user} placeholder="Email"/>
                 <input type="password" onChange={(event) => changeInputHandler(event,"pass")} value={password} placeholder="Contraseña"/>
                 <small>Olvidé mi contraseña</small>
-                <button type="submit">Enviar</button>
+                <button type="submit">Sign in</button>
             </form>
             <div className="login__registro">
                 <p>No tienes una cuenta?</p><small>Registrarme</small>

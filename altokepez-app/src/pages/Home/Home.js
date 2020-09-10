@@ -1,12 +1,18 @@
 import React  from 'react';
 import { connect } from 'react-redux';
+import Banner from '../../components/Banner/Banner';
 
 
 class Home extends React.Component{
 
     render(){
 
-        return <h2>Welcome {this.props.userEmail}</h2>
+        
+        return (
+            <main className="home">
+                <Banner  />
+            </main>
+        );
     }
 }
 
