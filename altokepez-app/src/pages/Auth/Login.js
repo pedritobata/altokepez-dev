@@ -3,6 +3,7 @@ import './Login.css';
 import { connect } from 'react-redux';
 import * as actionCreators from '../../store/actions/index';
 import Backdrop from '../../components/Backdrop/Backdrop';
+import Button from '../../components/UI/Button/Button';
 
 const Login = (props) => {
 
@@ -36,7 +37,7 @@ const Login = (props) => {
                 <input type="text" onChange={(event) => changeInputHandler(event,"user")} value={user} placeholder="Email"/>
                 <input type="password" onChange={(event) => changeInputHandler(event,"pass")} value={password} placeholder="Contraseña"/>
                 <small>Olvidé mi contraseña</small>
-                <button type="submit">Sign in</button>
+                <Button value="Sign in" />
             </form>
             <div className="login__registro">
                 <p>No tienes una cuenta?</p><small>Registrarme</small>

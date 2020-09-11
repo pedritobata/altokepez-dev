@@ -8,10 +8,17 @@
     src: url("../src/assets/fonts/sofiapro-light.otf");
 }
 
+@font-face{
+    font-family: 'Playfair Display';
+    src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
 :root{
     --custom-primary: #d46802;
     --custom-secondary: #3131fa;
     --red-catchy: #F72E00;
+    --discount-box-width: 40%;
+    --discount-box-height: 30%;
 }
 
 html {
@@ -39,6 +46,7 @@ body {
         font-size: 11px;
     }
 } */
+
 
 
 @import url("../node_modules/bootstrap/scss/bootstrap.scss");

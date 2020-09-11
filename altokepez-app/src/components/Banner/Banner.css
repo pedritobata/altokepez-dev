@@ -1,10 +1,43 @@
 .banner {
+  position: relative;
   display: flex;
-  height: auto;
+  height: 83vh;
+  overflow: hidden;
+  transition: all .2s ease-in;
 }
 
-.banner__dish {
-  width: 50%;
+.banner__dishImg {
+  width: 50vw;
   height: 100%;
   object-fit: cover;
+  opacity: .98;
 }
+
+.animationContainer{
+  background-color: black;
+ 
+}
+
+@media (max-width: 1200px){
+  .banner {
+    height: 66vh;
+  }
+}
+
+@media (max-width: 1023px){
+  .banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px){
+  .banner {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 576px){
+  .banner {
+    height: 44vh;
+  }
+}  

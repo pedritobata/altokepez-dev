@@ -1,0 +1,26 @@
+
+.discountbox {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: white;
+    min-width: var(--discount-box-width);
+    min-height: var(--discount-box-height);
+    position: absolute;
+    z-index: 1;
+    padding: 50px 40px;
+    box-shadow: 1px 1px -10px 1px rgba(0,0,0, .8);
+}
+
+.discountbox > h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.center{
+    top: calc(50% - var(--discount-box-height)/2);
+    left: calc(50% - var(--discount-box-width)/2);
+}

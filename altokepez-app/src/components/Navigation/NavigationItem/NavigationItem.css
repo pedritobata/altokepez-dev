@@ -9,7 +9,7 @@
    
         font-family: inherit;
         /* font-style: normal; */
-        font-weight: bold;
+        font-weight: 800;
         font-size: 1.02rem;
         /* padding: 0 20px; */
         color: black;
@@ -17,16 +17,16 @@
         text-decoration:  none;
 
         /* truco para subrayado progresivo */
-        background-image: linear-gradient(var(--custom-primary), var(--custom-primary));
+        background-image: linear-gradient(var(--red-catchy), var(--red-catchy));
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 1px;
-        transition: background-size .4s;
+        transition: background-size .5s;
        
 }
 
 li.nav-item a:hover{
-        color: var(--custom-primary);
+        color: var(--red-catchy);
         padding-bottom: 5px;
 
           /* truco para subrayado progresivo */

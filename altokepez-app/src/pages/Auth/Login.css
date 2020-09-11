@@ -6,9 +6,9 @@
 .login__container{
     position: absolute; 
     top: 16vh;
-    right: 33%;
+    right: calc(50vw - 250px);
     background-color: white;
-    z-index: 2;
+    z-index: 10;
     min-width: 500px;
     padding: 65px;
     margin: auto;
@@ -85,23 +85,7 @@
     
 }
 
-.login__form > button{
-    height: 3.3rem;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: 0;
-    outline: none;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: .84rem;
-    font-weight: 800;
-}
 
-.login__form > button:hover{
-    background-color: red;
-    transition: all .3s ease;
-}
 
 .login__registro{
     margin-top: 20px;

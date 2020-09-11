@@ -1,0 +1,22 @@
+
+.button{
+    height: 3.3rem;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .84rem;
+    font-weight: 800;
+}
+
+.button:active,
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    background-color: red;
+    transition: all .3s ease;
+}
