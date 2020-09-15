@@ -20,3 +20,10 @@
     background-color: red;
     transition: all .3s ease;
 }
+
+@media (max-width: var(--discount-box-small-breakpoint)){
+    .button{
+        height: 9rem;
+        padding: 8px 17px;
+    }
+}

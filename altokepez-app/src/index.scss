@@ -17,8 +17,10 @@
     --custom-primary: #d46802;
     --custom-secondary: #3131fa;
     --red-catchy: #F72E00;
-    --discount-box-width: 40%;
-    --discount-box-height: 30%;
+    --discount-box-width: 25%;
+    --discount-box-height: 20%;
+    --discount-box-small-breakpoint: 768px;
+    --discount-box-medium-breakpoint: 1024px;
 }
 
 html {
@@ -47,6 +49,7 @@ body {
     }
 } */
 
-
+$discount-box-small-breakpoint: 768px;
+$discount-box-medium-breakpoint: 1024px;
 
 @import url("../node_modules/bootstrap/scss/bootstrap.scss");

@@ -6,9 +6,9 @@ import DiscountBox from "../DiscountBox/DiscountBox";
 const Banner = () => {
   return (
     <div className="banner">
-      <DiscountBox  text="Descuento hasta el 20%"  position="center"/>
+      <DiscountBox  text="Descuento hasta 20%"  position="center"/>
       <Animated animationIn="fadeInDown" 
-      animationInDuration={1100}
+      animationInDuration={800}
       animationInDelay={0}
       className="animationContainer">
        
@@ -20,7 +20,7 @@ const Banner = () => {
         
       </Animated>
       <Animated animationIn="fadeInUp"
-       animationInDuration={1200}
+       animationInDuration={800}
        animationInDelay={0}
        className="animationContainer">
        

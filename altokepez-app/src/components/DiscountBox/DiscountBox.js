@@ -1,5 +1,5 @@
 import React from 'react';
-import './DiscountBox.css';
+import './DiscountBox.scss';
 import Button from '../UI/Button/Button';
 
 const DiscountBox = (props) => {
@@ -7,7 +7,7 @@ const DiscountBox = (props) => {
     return (
         <div className={"discountbox ".concat(props.position)}>
             <h1>{props.text}</h1>
-            <Button value="comprar ahora" />
+            <Button value="comprar" />
         </div>
     );
 }
