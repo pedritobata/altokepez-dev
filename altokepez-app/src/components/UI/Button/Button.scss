@@ -1,7 +1,7 @@
 @import '../../../design-constants/sass-variables';
 
 .button{
-    height: 3.3rem;
+    height: 3.2rem;
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -24,10 +24,10 @@
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .button{
-        height: 3rem;
-        padding: 8px 18px;
+        height: 2.8rem;
+        padding: 6px 17px;
         letter-spacing: 2px;
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }
 

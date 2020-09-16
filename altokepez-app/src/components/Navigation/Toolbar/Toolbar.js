@@ -17,11 +17,11 @@ const Toolbar = (props) => {
      function stickyOnScroll(){
       window.addEventListener("scroll", () => {
         if(window.scrollY > 91){
-          setSticky("header--fixed");
+          setSticky("header--sticky");
         }
-        // else{
-        //   setSticky("");
-        // }
+        else if(window.scrollY === 0){
+          setSticky("");
+        }
       });
     }
     stickyOnScroll();
