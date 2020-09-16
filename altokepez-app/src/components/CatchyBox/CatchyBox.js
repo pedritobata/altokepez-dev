@@ -1,5 +1,5 @@
 import React from 'react';
-import './CatchyBox.css';
+import './CatchyBox.scss';
 
 const CatchyBox = props => {
 

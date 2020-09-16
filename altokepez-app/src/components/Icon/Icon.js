@@ -1,5 +1,5 @@
 import React, { useEffect , useState} from 'react';
-import './Icon.css';
+import './Icon.scss';
 
 const Icon = props => {
 

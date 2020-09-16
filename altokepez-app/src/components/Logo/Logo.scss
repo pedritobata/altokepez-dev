@@ -1,0 +1,16 @@
+@import '../../design-constants/sass-variables';
+
+.logo {
+  
+}
+
+.logo img{
+    width: 4.5rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
+    .logo img{
+        width: 4.2rem;
+    }
+}

@@ -1,0 +1,8 @@
+
+@mixin disapear-on-breakpoint-by-classname($breakpoint, $element-class){
+    @media screen and (max-width: $breakpoint){
+        .#{$element-class}{
+            display: none;
+        }
+    }
+}

@@ -37,11 +37,11 @@ body {
 //     }
 // }
 
-@media screen and (max-width: 640px){
+/* @media screen and (max-width: 640px){
     html{
         font-size: 14.5px;
     }
-}
+} */
 
 /* @media screen and (max-width: 470px){
     html{
@@ -49,7 +49,5 @@ body {
     }
 } */
 
-$discount-box-small-breakpoint: 768px;
-$discount-box-medium-breakpoint: 1024px;
 
 @import url("../node_modules/bootstrap/scss/bootstrap.scss");

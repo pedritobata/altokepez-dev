@@ -1,0 +1,41 @@
+@import '../../../design-constants/sass-variables';
+
+.button{
+    height: 3.3rem;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .84rem;
+    font-weight: 800;
+}
+
+.button:active,
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    background-color: red;
+    transition: all .3s ease;
+}
+
+@media (max-width: $user-icon-disapear-mobile-breakpoint){
+    .button{
+        height: 2.3rem;
+        padding: 4px 13px;
+        letter-spacing: 2px;
+        font-size: .6rem;
+    }
+}
+
+/* @media (max-width: $discount-box-xsmall-breakpoint) {
+    .button{
+        height: 2.3rem;
+        padding: 4px 13px;
+        letter-spacing: 2px;
+        font-size: .6rem;
+    }
+  } */

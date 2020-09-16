@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../Logo/Logo";
-import "./Toolbar.css";
+import "./Toolbar.scss";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import CatchyBox from "../../CatchyBox/CatchyBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,11 +11,11 @@ import { NavLink } from 'react-router-dom';
 
 const Toolbar = (props) => {
   return (
-    <header className="container container-v1">
+    <header className="container-v1">
       <div className="row bar border-bottom-0 align-items-center">
         <div className="col-3"><Logo /></div>
         <div className="col-6">
-          <nav>
+          <nav className="nav-items--chirrion">
             <NavigationItems />
           </nav>
         </div>

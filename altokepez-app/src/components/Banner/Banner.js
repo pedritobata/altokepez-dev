@@ -1,5 +1,5 @@
 import React from "react";
-import "./Banner.css";
+import "./Banner.scss";
 import {Animated} from "react-animated-css";
 import DiscountBox from "../DiscountBox/DiscountBox";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import altokepezLogo from '../../assets/images/logo-altokepez.jpg';
-import './Logo.css';
+import './Logo.scss';
 
 const Logo = props => {
 

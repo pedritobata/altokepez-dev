@@ -1,0 +1,27 @@
+@import '../../design-constants/sass-variables';
+@import '../../design-constants/sass-mixins';
+
+
+.bicon{
+    cursor: pointer;
+}
+
+
+
+
+
+/* @media screen and (max-width: 1068px){
+    .disapear{
+        display: none;
+    }
+} */
+@include disapear-on-breakpoint-by-classname($user-icon-disapear-icon-breakpoint, "disapear");
+
+@include disapear-on-breakpoint-by-classname($user-icon-disapear-mobile-breakpoint, "disapear-mobile");
+
+/* @media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
+    .disapear-mobile{
+        display: none;
+    }
+} */
+
