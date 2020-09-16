@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../Logo/Logo";
 import "./Toolbar.scss";
 import NavigationItems from "../NavigationItems/NavigationItems";
@@ -10,8 +10,27 @@ import { mainIconDefaultSize } from '../../../shared/commons/css-constants';
 import { NavLink } from 'react-router-dom';
 
 const Toolbar = (props) => {
+
+  const [sticky, setSticky] = useState("");
+
+  useEffect(() => {
+     function stickyOnScroll(){
+      window.addEventListener("scroll", () => {
+        if(window.scrollY > 91){
+          setSticky("header--fixed");
+        }
+        // else{
+        //   setSticky("");
+        // }
+      });
+    }
+    stickyOnScroll();
+
+    return () => window.removeEventListener(stickyOnScroll);
+  },[]);
+
   return (
-    <header className="container-v1">
+    <header className={`container-v1 header ${sticky}`}>
       <div className="row bar border-bottom-0 align-items-center">
         <div className="col-3"><Logo /></div>
         <div className="col-6">

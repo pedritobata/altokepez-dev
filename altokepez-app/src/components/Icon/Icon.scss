@@ -15,7 +15,7 @@
         display: none;
     }
 } */
-@include disapear-on-breakpoint-by-classname($user-icon-disapear-icon-breakpoint, "disapear");
+@include disapear-on-breakpoint-by-classname($discount-box-medium-breakpoint, "disapear");
 
 @include disapear-on-breakpoint-by-classname($user-icon-disapear-mobile-breakpoint, "disapear-mobile");
 

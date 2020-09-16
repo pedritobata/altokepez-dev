@@ -17,7 +17,7 @@
 }
 
 .animationContainer{
-  background-color: black;
+  filter: brightness(67%);
  
 }
 
@@ -29,7 +29,7 @@
 
 @media (max-width: $discount-box-medium-breakpoint){
   .banner {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -41,6 +41,6 @@
 
 @media (max-width: $last-smallest-breakpoint){
   .banner {
-    height: 44vh;
+    height: 50vh;
   }
 }  

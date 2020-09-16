@@ -18,7 +18,8 @@
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 3.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 @media (max-width: $discount-box-large-breakpoint) {
@@ -33,17 +34,17 @@
   }
 }
 
-@media (max-width: $user-icon-disapear-mobile-breakpoint) {
+// @media (max-width: $user-icon-disapear-mobile-breakpoint) {
+//   .discountbox > h1 {
+//     font-size: 1.88rem;
+//   }
+// }
+
+@media (max-width: $last-smallest-breakpoint) {
   .discountbox > h1 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
-
-/* @media (max-width: $discount-box-xsmall-breakpoint) {
-  .discountbox > h1 {
-    font-size: 1.3rem;
-  }
-} */
 
 .center {
   top: 50%;

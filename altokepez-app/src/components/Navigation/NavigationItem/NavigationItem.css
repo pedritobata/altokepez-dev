@@ -34,5 +34,9 @@ li.nav-item a:hover{
         
 }
 
+.active { 
+  color: red;
+}
+
 
 

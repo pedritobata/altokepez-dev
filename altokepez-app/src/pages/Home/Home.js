@@ -1,6 +1,7 @@
 import React  from 'react';
 import { connect } from 'react-redux';
 import Banner from '../../components/Banner/Banner';
+import Services from '../../containers/Services/Services';
 
 
 class Home extends React.Component{
@@ -11,6 +12,7 @@ class Home extends React.Component{
         return (
             <main className="home">
                 <Banner  />
+                <Services  />
             </main>
         );
     }
