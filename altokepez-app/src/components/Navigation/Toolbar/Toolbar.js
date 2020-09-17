@@ -40,7 +40,7 @@ const Toolbar = (props) => {
             <NavigationItems />
           </nav>
         </div>
-        <div className="col-3 d-flex justify-content-center align-items-center">
+        <div className="col-3 d-flex justify-content-end align-items-center">
           <NavLink to="#" exact>
             <Icon 
               color="black"
