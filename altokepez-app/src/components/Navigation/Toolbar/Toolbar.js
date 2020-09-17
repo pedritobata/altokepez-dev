@@ -8,10 +8,12 @@ import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
 import Icon from '../../Icon/Icon';
 import { mainIconDefaultSize } from '../../../shared/commons/css-constants';
 import { NavLink } from 'react-router-dom';
+import BurgerMenuIcon from '../../../containers/Sidedrawer/BurgerMenuIcon/BurgerMenuIcon';
 
 const Toolbar = (props) => {
 
   const [sticky, setSticky] = useState("");
+  const [showBurger, setShowBurger] = useState(false);
 
   useEffect(() => {
      function stickyOnScroll(){
@@ -32,7 +34,7 @@ const Toolbar = (props) => {
   return (
     <header className={`container-v1 header ${sticky}`}>
       <div className="row bar border-bottom-0 align-items-center">
-        <div className="col-3"><Logo /></div>
+        <div className="col-3">{showBurger ?  <BurgerMenuIcon  /> : <Logo />}</div>
         <div className="col-6">
           <nav className="nav-items--chirrion">
             <NavigationItems />

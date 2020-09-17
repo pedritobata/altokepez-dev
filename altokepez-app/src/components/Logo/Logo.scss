@@ -5,12 +5,14 @@
 }
 
 .logo img{
-    width: 4.5rem;
-    border-radius: 50%;
+    width: 8rem;
+    height: 3rem;
+    margin: .5rem 0;
+    // border-radius: 50%;
 }
 
 @media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
-    .logo img{
-        width: 3.9rem;
+    .logo{
+       display: none;
     }
 }
