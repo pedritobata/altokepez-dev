@@ -6,7 +6,7 @@ const Sidedrawer = (props) => {
     return (
         <div className={`sidedrawer ${props.showup}`}>
             <nav>
-                <h1>Soy el SideDrawerd ddddddddddddddddd</h1>
+                
             </nav>
         </div>
     );

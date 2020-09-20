@@ -1,0 +1,36 @@
+@import '../../design-constants/sass-variables';
+
+.services{
+    margin: 10vh 0;
+}
+
+.services__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services__title{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.services > h2::after{
+    content: "";
+    background-color: rgb(78, 75, 75);
+    height: 2px;
+    width: 5%;
+    display: block;
+    margin: .8rem auto;
+    
+}
+
+
+@media (max-width: $user-icon-disapear-mobile-breakpoint){
+    .services__container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
