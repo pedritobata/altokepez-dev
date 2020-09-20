@@ -1,10 +1,10 @@
 import React from 'react';
-import './BurgerMenuIcon.css';
+import './BurgerMenuIcon.scss';
 
-const BurgerMenuIcon = () => {
+const BurgerMenuIcon = (props) => {
 
     return (
-        <div className="burgermenuIcon">
+        <div className="burgermenuIcon" onClick={props.clicked}>
             <p></p>
             <p></p>
             <p></p>

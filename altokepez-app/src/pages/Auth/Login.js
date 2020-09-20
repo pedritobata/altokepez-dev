@@ -28,7 +28,7 @@ const Login = (props) => {
 
     return (
         <div>
-        <Backdrop clicked={props.backdropClicked} />
+       
         <section className="login__container">
             <h1 className="login__title">Please Sign in</h1>
             <hr />

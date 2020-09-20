@@ -5,23 +5,20 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 import CatchyBox from "../../CatchyBox/CatchyBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
-import Icon from '../../Icon/Icon';
-import { mainIconDefaultSize } from '../../../shared/commons/css-constants';
-import { NavLink } from 'react-router-dom';
-import BurgerMenuIcon from '../../../containers/Sidedrawer/BurgerMenuIcon/BurgerMenuIcon';
+import Icon from "../../Icon/Icon";
+import { mainIconDefaultSize } from "../../../shared/commons/css-constants";
+import { NavLink } from "react-router-dom";
+import BurgerMenuIcon from "../../../containers/Sidedrawer/BurgerMenuIcon/BurgerMenuIcon";
 
 const Toolbar = (props) => {
-
   const [sticky, setSticky] = useState("");
-  const [showBurger, setShowBurger] = useState(false);
 
   useEffect(() => {
-     function stickyOnScroll(){
+    function stickyOnScroll() {
       window.addEventListener("scroll", () => {
-        if(window.scrollY > 91){
+        if (window.scrollY > 91) {
           setSticky("header--sticky");
-        }
-        else if(window.scrollY === 0){
+        } else if (window.scrollY === 0) {
           setSticky("");
         }
       });
@@ -29,12 +26,15 @@ const Toolbar = (props) => {
     stickyOnScroll();
 
     return () => window.removeEventListener(stickyOnScroll);
-  },[]);
+  }, []);
 
   return (
     <header className={`container-v1 header ${sticky}`}>
       <div className="row bar border-bottom-0 align-items-center">
-        <div className="col-3">{showBurger ?  <BurgerMenuIcon  /> : <Logo />}</div>
+        <div className="col-3 d-flex align-items-center">
+          <BurgerMenuIcon clicked={props.onShowSideDrawer}/>
+          <Logo />
+        </div>
         <div className="col-6">
           <nav className="nav-items--chirrion">
             <NavigationItems />
@@ -42,7 +42,7 @@ const Toolbar = (props) => {
         </div>
         <div className="col-3 d-flex justify-content-end align-items-center">
           <NavLink to="#" exact>
-            <Icon 
+            <Icon
               color="black"
               iconName="person"
               hiddenMobile
@@ -50,13 +50,13 @@ const Toolbar = (props) => {
               size={`calc(${mainIconDefaultSize} + 0.3rem)`}
             />
           </NavLink>
-          <Icon 
-              color="black"
-              iconName="heart"
-              hidden
-              size={mainIconDefaultSize}
+          <Icon
+            color="black"
+            iconName="heart"
+            hidden
+            size={mainIconDefaultSize}
           />
-          <Icon 
+          <Icon
             color="black"
             iconName="cart"
             hidden

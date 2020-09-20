@@ -1,0 +1,55 @@
+@import '../../design-constants/sass-variables';
+
+.sidedrawer{
+    position: fixed;
+    z-index: 11;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    transition: all 0.1s ease-in-out;
+}
+
+.sidedrawer > nav{
+    width: 100%;
+}
+
+.closed{
+    transform: translateX(-100%);
+}
+
+.open-drawer{
+    animation: enter .2s ease-out;
+}
+
+.close-drawer{
+    transform: translateX(-100%);
+}
+
+@keyframes enter{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+// @keyframes leave{
+//     0%{
+//         transform: translateX(0%);
+//     }
+//     100%{
+//         transform: translateX(-100%);
+//     }
+// }
+
+
+
+
+@media (max-width: $last-smallest-breakpoint){
+    
+    .sidedrawer{width: 85%;}
+}
+

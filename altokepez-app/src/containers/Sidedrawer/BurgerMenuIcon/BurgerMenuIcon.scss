@@ -1,0 +1,27 @@
+@import '../../../design-constants/sass-variables';
+
+.burgermenuIcon{
+    width: fit-content;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: none;
+}
+
+.burgermenuIcon > p{
+    height: 4px;
+    background-color: $color-primary-dark-light;
+    width: 2.1rem;
+    margin: .4rem;
+    border-radius: 20px;
+   
+}
+
+.burgermenuIcon p:nth-child(2){
+    width: 1.8rem;
+}
+
+@media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
+    .burgermenuIcon{
+       display: inline-block;
+    }
+}

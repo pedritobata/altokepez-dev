@@ -1,12 +1,14 @@
 import React from 'react';
-import './Sidedrawer.css';
+import './Sidedrawer.scss';
 
-const Sidedrawer = () => {
+const Sidedrawer = (props) => {
 
     return (
-        <nav className="sidedrawer">
-            
-        </nav>
+        <div className={`sidedrawer ${props.showup}`}>
+            <nav>
+                <h1>Soy el SideDrawerd ddddddddddddddddd</h1>
+            </nav>
+        </div>
     );
 }
 
