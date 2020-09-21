@@ -51,6 +51,11 @@
     height: 15rem;
 }
 
+
+.login__form > small {
+   align-self: flex-start;
+}
+
 .login__form > input{
     height: 3rem;
     padding: 10px;

@@ -3,7 +3,6 @@ import './Service.scss';
 
 const Service = ({img, title, description}) => {
 
-    console.log("img", img);
 
     return (
         <div className="service">

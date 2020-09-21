@@ -4,11 +4,12 @@ import "./Services.scss";
 import standImage from "../../assets/images/stand.png";
 import motoImage from "../../assets/images/vespa.png";
 import storeImage from "../../assets/images/barbershop.png";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Services = () => {
   return (
     <section className="services">
-      <h2 className="services__title">Nuestros Servicios</h2>
+      <SectionTitle title="Nuestros Servicios" />
       <div className="services__container">
         <Service
           img={standImage}

@@ -24,16 +24,17 @@
     text-align: center;
     padding: 0 10px;
     width: 90%;
-    font-size: 0.97rem;
+    font-size: 1.1rem;
     
 }
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .service{
-        margin-bottom: 2.8rem;
+        margin-bottom: 3.2rem;
     }
 
     .service__image{
+        width: 15vw;
         margin-bottom: .2rem;
     }
 

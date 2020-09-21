@@ -10,22 +10,6 @@
     align-items: center;
 }
 
-.services__title{
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 500;
-}
-
-.services > h2::after{
-    content: "";
-    background-color: rgb(78, 75, 75);
-    height: 2px;
-    width: 5%;
-    display: block;
-    margin: .8rem auto;
-    
-}
-
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .services__container{
