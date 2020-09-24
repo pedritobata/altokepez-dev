@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionTitle.css';
+import './SectionTitle.scss';
 
 const SectionTitle = (props) => {
 

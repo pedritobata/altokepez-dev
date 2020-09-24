@@ -1,7 +1,7 @@
 @import '../../design-constants/sass-variables';
 
 .services{
-    margin: 10vh 0;
+    margin: 12vh 0;
 }
 
 .services__container{
@@ -16,5 +16,9 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .services{
+        margin: 9vh 0;
     }
 }

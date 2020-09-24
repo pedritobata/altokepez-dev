@@ -11,9 +11,7 @@ function App() {
     <div className="app">
       <Layout>
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
+          <Route path={["/", "/home"]} exact component={Home} />
         </Switch> 
       </Layout>
     </div>

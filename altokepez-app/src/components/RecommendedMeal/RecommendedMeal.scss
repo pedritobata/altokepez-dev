@@ -1,0 +1,69 @@
+@import '../../design-constants/sass-variables';
+
+.recommended-meal{
+    width: 47%;
+    height: 30vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.recommended-meal__container{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.recommended-meal__title{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    // position: absolute;
+    // top: 5%;
+    // left: 5%;
+}
+
+.recommended-meal__container:hover{
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
+.recommended-meal__shop{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+@media (max-width: $user-icon-disapear-mobile-breakpoint){
+    .recommended-meal__title{
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+
+    .recommended-meal{
+        width: 87%;
+        height: 44vw;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: $sidedrawer-sweetspot-mobile){
+    .recommended-meal__title{
+        font-size: 1.7rem;
+    }
+
+    .recommended-meal{
+        width: 87%;
+        height: 44vw;
+        margin: 1rem;
+    }
+}

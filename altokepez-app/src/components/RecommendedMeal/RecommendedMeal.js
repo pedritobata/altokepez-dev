@@ -1,13 +1,22 @@
-import React from 'react';
-import './RecommendedMeal.scss';
+import React from "react";
+import "./RecommendedMeal.scss";
+import Button from "../UI/Button/Button";
 
-const RecommendedMeal = () => {
-
-    return (
-        <div className="recommended-meal">
-            <h3>Recommended</h3>
+const RecommendedMeal = (props) => {
+  return (
+    <div className="recommended-meal">
+        <div
+          className="recommended-meal__container"
+          style={{ backgroundImage: `url('${props.image}')` }}
+        >
+          
         </div>
-    );
-}
+        <div className="recommended-meal__shop">
+        <h3 className="recommended-meal__title">{props.title}</h3>
+        <Button light value="comprar" />
+      </div>
+    </div>
+  );
+};
 
 export default RecommendedMeal;

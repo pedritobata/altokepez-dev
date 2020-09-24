@@ -4,7 +4,7 @@ import './Button.scss';
 const Button = (props) => {
 
     return (
-        <button className="button" type="submit">{props.value}</button>
+        <button className={`button ${props.light ? 'button-light' : ''}`} type="submit">{props.value}</button>
     );
 }
 

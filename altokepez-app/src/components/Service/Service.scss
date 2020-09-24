@@ -9,7 +9,7 @@
 }
 
 .service__image{
-    width: 10vw;
+    width: 8vw;
     margin-bottom: 1rem;
 }
 
@@ -24,7 +24,7 @@
     text-align: center;
     padding: 0 10px;
     width: 90%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 
@@ -34,8 +34,12 @@
     }
 
     .service__image{
-        width: 15vw;
+        width: 13vw;
         margin-bottom: .2rem;
+    }
+
+    .service__title{
+        font-size: 1rem;
     }
 
     .service__description{
