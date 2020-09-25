@@ -32,6 +32,10 @@
   .discountbox > h1 {
     font-size: 1.9rem;
   }
+
+  // .discountbox {
+  //   font-size: 1.6rem;
+  // }
 }
 
 // @media (max-width: $user-icon-disapear-mobile-breakpoint) {
@@ -43,6 +47,10 @@
 @media (max-width: $last-smallest-breakpoint) {
   .discountbox > h1 {
     font-size: 1.6rem;
+  }
+  
+  .discountbox {
+    min-width: 60%;
   }
 }
 
