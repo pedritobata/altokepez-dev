@@ -25,6 +25,7 @@
 .introduction__title{
     margin-bottom: 1rem;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .introduction__description{
@@ -68,7 +69,7 @@
 
     .introduction__image{
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         object-fit: cover;
         align-self: center;
     }

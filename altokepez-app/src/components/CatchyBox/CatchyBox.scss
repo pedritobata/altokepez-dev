@@ -9,7 +9,7 @@
 
 .catchy-box{
     color: #fff;
-    padding: .7rem;
+    padding: .5rem;
     font-size: 1.3rem;
     font-weight: bold;
     font-family: inherit;
@@ -21,7 +21,14 @@
 
 @media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
     .catchy-box{
-        padding: .6rem;
+        padding: .5rem;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: $last-smallest-breakpoint) {
+    .catchy-box{
+        padding: .45rem;
+        font-size: .8rem;
     }
 }

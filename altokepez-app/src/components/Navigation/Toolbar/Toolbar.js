@@ -39,6 +39,7 @@ const Toolbar = (props) => {
           <nav className="nav-items--chirrion">
             <NavigationItems />
           </nav>
+          <h2 className="main-title main-title--chirrin">al toke pez</h2>
         </div>
         <div className="col-3 d-flex justify-content-end align-items-center">
           <NavLink to="#" exact>
@@ -50,16 +51,17 @@ const Toolbar = (props) => {
               size={`calc(${mainIconDefaultSize} + 0.3rem)`}
             />
           </NavLink>
-          <Icon
+         {/*  <Icon
             color="black"
             iconName="heart"
             hidden
             size={mainIconDefaultSize}
-          />
+          /> */}
           <Icon
             color="black"
             iconName="cart"
-            hidden
+            /* hidden */
+            hiddenMobile
             size={mainIconDefaultSize}
           />
           <CatchyBox text="Delivery" />

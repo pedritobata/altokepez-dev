@@ -13,6 +13,11 @@
     src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
+@font-face{
+    src: url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+    font-family: 'Rock Salt', cursive;
+}
+
 :root{
     --custom-primary: #d46802;
     --custom-secondary: #3131fa;
