@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Login.css';
 import { connect } from 'react-redux';
 import * as actionCreators from '../../store/actions/index';
-import Backdrop from '../../components/Backdrop/Backdrop';
 import Button from '../../components/UI/Button/Button';
 
 const Login = (props) => {

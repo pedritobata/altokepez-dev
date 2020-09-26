@@ -10,8 +10,7 @@
     letter-spacing: 5px;
     font-size: .84rem;
     font-weight: 800;
-    
-    box-sizing: border-box;
+    outline: none;
 }
 
 .button:active,
@@ -32,8 +31,7 @@
 }
 
 .button-light:hover{
-    border: 1px solid var(--red-catchy);
-    background: white;
+    color: white;
 }
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){

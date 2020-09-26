@@ -8,10 +8,10 @@
 }
 
 .recommended-meal__container{
-    padding: 1rem;
+   /*  padding: 1rem; */
     width: 100%;
     height: 100%;
-    transition: transform .3s ease-in;
+    transition: transform .3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@
 
 .recommended-meal__container:hover{
     filter: brightness(50%);
-    transform: scale(1.05);
+    transform: scale3d(1.05,1.05,1.05);//3d es para que no haya ese pequeño rebote luego de escalar la imagen
 }
 
 .recommended-meal__shop{

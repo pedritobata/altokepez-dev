@@ -12,4 +12,11 @@ describe('Login Component', () => {
         const wrapper = shallow(<TestLogin />);
         expect(wrapper.contains(<Backdrop />));
     });
+
+    it("User state should be empty", () => {
+        const wrapper = shallow(<TestLogin />);
+        console.log("input", wrapper.find('input[type="text"]'));
+        expect(wrapper.find('input[type="text"]').textContent).toBe("");
+    });
 });
+
