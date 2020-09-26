@@ -4,6 +4,49 @@
 
 }
 
+.introduction{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16vh;
+    margin-top: 16vh;
+}
+
+.introduction__image{
+    width: 35%;
+    object-fit: contain;
+    box-shadow: 2px -2px 16px -9px rgba(0,0,0, .75);
+}
+
+.introduction__info{
+    width: 40%;
+    margin-left: 2rem;
+}
+
+.introduction__title{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.introduction__description{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.introduction__author{
+    font-size: 1.2rem;
+}
+
+.introduction__author > p{
+    height: 1px;
+    background-color: black;
+    width: 1.3rem;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
 .recommended{
     display: flex;
     /* flex-wrap: wrap; */
@@ -14,5 +57,56 @@
     .recommended{
        flex-direction: column;
        align-items: center;
+    }
+
+    .introduction{
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .introduction__image{
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    .introduction__info{
+        width: 100%;
+        margin:0;
+        padding: 8px;
+    }
+
+    .introduction__title{
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .introduction__description{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: $sidedrawer-sweetspot-mobile){
+    .introduction__title{
+        font-size: 1.3rem;
+    }
+
+    .introduction__description{
+        font-size: .9rem;
+        line-height: 1.7rem;
+    }
+
+    .introduction__author{
+        font-size: 1rem;
     }
 }
