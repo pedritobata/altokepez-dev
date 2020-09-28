@@ -7,7 +7,7 @@ const Testimonials = (props) => {
 
   return (
     <div className="testimonials">
-      {props.items.map(item => {
+      {props.comments.map(item => {
         return (
           <div className="testimonial" style={{width:`${100 / props.perpage}%`}}>
             <img
