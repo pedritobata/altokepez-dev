@@ -1,3 +1,4 @@
+
 $discount-box-large-breakpoint: 1200px;
 $discount-box-medium-breakpoint: 970px;
 /* $discount-box-small-breakpoint: 768px; */
@@ -9,3 +10,13 @@ $last-smallest-breakpoint: 576px;
 $sidedrawer-sweetspot-mobile: 400px;
 
 $color-primary-dark-light: rgb(68, 67, 67);
+
+:export{
+    discountBoxLargereakpoint: $discount-box-large-breakpoint;
+    discountBoxMediumBreakpoint: $discount-box-medium-breakpoint;
+    discountBoxXsmallBreakpoint: $discount-box-xsmall-breakpoint;
+    userIconDisapearMobileBreakpoint: $user-icon-disapear-mobile-breakpoint;
+    sidedrawerSweetspotMobile: $sidedrawer-sweetspot-mobile;
+    lastSmallestBreakpoint: $last-smallest-breakpoint;
+
+}

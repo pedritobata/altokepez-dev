@@ -1,7 +1,7 @@
 @import '../../design-constants/sass-variables';
 
 .home{
-
+    overflow-x: hidden;
 }
 
 .introduction{
@@ -52,6 +52,7 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-around;
+    margin-bottom: 6rem;
 }
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){

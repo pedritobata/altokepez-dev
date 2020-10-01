@@ -1,13 +1,13 @@
 @import '../../../design-constants/sass-variables';
 
 .button{
-    height: 3.2rem;
+    height: 2.6rem;
     padding: 10px 20px;
     background-color: black;
     color: white;
     border: 0;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: .84rem;
     font-weight: 800;
     outline: none;
@@ -36,7 +36,7 @@
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .button{
-        height: 2.8rem;
+       /*  height: 2.8rem; */
         padding: 6px 17px;
         letter-spacing: 1px;
         font-size: .8rem;
@@ -45,9 +45,9 @@
 
 @media (max-width: $sidedrawer-sweetspot-mobile) {
     .button{
-        height: 2.4rem;
+        height: 2.3rem;
         padding: 4px 13px;
-        letter-spacing: 2px;
+       /*  letter-spacing: 2px; */
         font-size: .6rem;
     }
   } 

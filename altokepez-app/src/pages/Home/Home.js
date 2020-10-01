@@ -5,9 +5,49 @@ import Services from '../../containers/Services/Services';
 import RecommendedMeal from '../../components/RecommendedMeal/RecommendedMeal';
 import './Home.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
+import Testimonials from '../../components/Testimonials/Testimonials';
 
 
 class Home extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            comments: [
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-12.jpg?v=1593146865",
+                    name: "Momo",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-13.jpg?v=1593146872",
+                    name: "Chinen",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-11.jpg?v=1593146856",
+                    name: "Jhon",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-12.jpg?v=1593146865",
+                    name: "Tato",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-13.jpg?v=1593146872",
+                    name: "Kike",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                {
+                    photo: "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-11.jpg?v=1593146856",
+                    name: "Yerbita",
+                    comment: "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!"
+                },
+                
+            ]
+        }
+    }
 
     render(){
 
@@ -31,12 +71,13 @@ class Home extends React.Component{
                         <cite className="introduction__author"><p></p> Tomás Matsufuji</cite>
                     </div>
                 </div>
-                <SectionTitle title="recomendamos hoy" />
+                <SectionTitle title="Recomendamos hoy" />
                 <div className="recommended">
                     <RecommendedMeal title="Cachetitos de Róbalo" image="https://scontent.flim13-1.fna.fbcdn.net/v/t31.0-8/55504_418774461526827_2011798023_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeFxI-qHohANka806_ESfDl8VlIEjGJaB59WUgSMYloHn6P1yTL0JbD-TzqVfZjLEYU&_nc_ohc=Lx3xMY83cuYAX-l9aUU&_nc_ht=scontent.flim13-1.fna&oh=584a311ead4194382fb3340fb3d2aa68&oe=5F8FA47A" />
                     <RecommendedMeal  title="Saltadito con hongos" image="https://scontent.flim13-1.fna.fbcdn.net/v/t31.0-8/329160_418773264860280_2016262609_o.jpg?_nc_cat=110&_nc_sid=e007fa&_nc_eui2=AeGjNYEE6gT_dce5_wt9jpRv7028AT2PYr_vTbwBPY9ivx9bQJimuQMih5SblI4zlKc&_nc_ohc=fcIgniADsIAAX8dMeIe&_nc_ht=scontent.flim13-1.fna&oh=14c7b0d573c7ef0cc16f31fb35fc2e9f&oe=5F8FD7C0"/>
                 </div>
-                
+                <SectionTitle title="Qué dice la gentita?" />
+                <Testimonials  comments={this.state.comments} perpage={3} />
             </main>
         );
     }

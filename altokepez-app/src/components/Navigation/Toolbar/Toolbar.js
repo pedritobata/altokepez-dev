@@ -3,8 +3,6 @@ import Logo from "../../Logo/Logo";
 import "./Toolbar.scss";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import CatchyBox from "../../CatchyBox/CatchyBox";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faChartBar } from "@fortawesome/free-regular-svg-icons";
 import Icon from "../../Icon/Icon";
 import { mainIconDefaultSize } from "../../../shared/commons/css-constants";
 import { NavLink } from "react-router-dom";
