@@ -67,7 +67,9 @@ const Testimonials = (props) => {
       <div className="testimonials__pageSwitchersContainer">
         {
           
-          pages.map((_,index) => <p key={index}>X</p>)
+          pages.map((_,index) => (
+            <p key={index} >X</p>
+          ))
         }
       </div>
     </>
