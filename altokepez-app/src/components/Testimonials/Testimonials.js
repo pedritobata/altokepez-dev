@@ -13,10 +13,9 @@ const lastSmallestBreakpoint = Number.parseInt(
 );
 
 const Testimonials = (props) => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState();
   const [testimoniesPerPage, setTestimoniesPerPage] = useState(props.perpage);
   const [pages, setPages] = useState(Array(Math.ceil(props.comments.length / testimoniesPerPage)).fill(''));
-  const [moveCarousel, setMoveCarousel] = useState(0);
  
   useEffect(() => {
     const resizeWindowListener = (event) => {
@@ -29,6 +28,7 @@ const Testimonials = (props) => {
       } else {
         setTestimoniesPerPage(1);
       }
+      //console.log("testimoniesPerPage",testimoniesPerPage);
       setPages(Array(Math.ceil(props.comments.length / testimoniesPerPage)).fill(''));
     };
     window.addEventListener("resize", resizeWindowListener);
@@ -39,14 +39,6 @@ const Testimonials = (props) => {
   }, [testimoniesPerPage, props.perpage,props.comments]);
 
 
-  const moveCarouselHandler = (index) => {
-    const targetPage = index + 1;
-    const translateX = (page - targetPage) * 100;
-    console.log("translateX",translateX);
-    console.log("index",index);
-    console.log("page",page);
-    setMoveCarousel(translateX);
-  }
 
   return (
     <>
@@ -54,7 +46,7 @@ const Testimonials = (props) => {
         className="testimonials"
         style={{
           width: `calc(${props.comments.length / testimoniesPerPage} * 100vw`,
-          transform: `translateX(${moveCarousel}vw)`
+          transform: `translateX(${-100 * page}vw)`
         }}
       >
         {props.comments.map((item) => {
@@ -79,7 +71,7 @@ const Testimonials = (props) => {
         {
           
           pages.map((_,index) => (
-            <p className="testimonials__pageSwitcher" key={index} onClick={moveCarouselHandler.bind(null, index)}>X</p>
+            <p className="testimonials__pageSwitcher" key={index} onClick={()=>setPage(index)}>X</p>
           ))
         }
       </div>
