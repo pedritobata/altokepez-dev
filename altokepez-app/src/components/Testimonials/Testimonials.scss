@@ -1,7 +1,7 @@
 
 .testimonials{
     display: flex;
-  
+    transition: all .7s ease-out;
 }
 
 .testimony{
@@ -25,6 +25,6 @@
 }
 
 .testimonials__pageSwitcher{
-    
+    cursor: pointer;
 }
 
