@@ -71,7 +71,7 @@ const Testimonials = (props) => {
     return () => {
       window.removeEventListener("resize", resizeWindowListener);
     };
-  }, [testimoniesPerPage, props.perpage,props.comments]);
+  }, [testimoniesPerPage, props.perpage,props.comments,page]);
 
 
 
@@ -89,7 +89,7 @@ const Testimonials = (props) => {
       }
     }else if(size === SIZE_RANGE_MEDIUM){
       if(direction === DIRECTION_FROM_LEFT){
-        setPage(1);
+        setPage(Math.floor(page / 2));
       }else  if(direction === DIRECTION_FROM_RIGHT){
         setPage(1);
       }
