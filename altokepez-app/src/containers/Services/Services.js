@@ -13,7 +13,7 @@ const Services = () => {
       <div className="services__container">
         <Service
           img={standImage}
-          title="Nuestra barra"
+          title="En la barra"
           description="Disfruta tu almuerzo en nuestra hermosa barra de siempre y acomódate como puedas!"
         />
         <Service

@@ -71,9 +71,11 @@ class Home extends React.Component{
                         <cite className="introduction__author"><p></p> Tomás Matsufuji</cite>
                     </div>
                 </div>
-                <SectionTitle title="Recomendamos hoy" />
+                <SectionTitle title="Hoy te recomiendo" />
                 <div className="recommended">
                     <RecommendedMeal title="Cachetitos de Róbalo" image="https://scontent.flim13-1.fna.fbcdn.net/v/t31.0-8/55504_418774461526827_2011798023_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeFxI-qHohANka806_ESfDl8VlIEjGJaB59WUgSMYloHn6P1yTL0JbD-TzqVfZjLEYU&_nc_ohc=Lx3xMY83cuYAX-l9aUU&_nc_ht=scontent.flim13-1.fna&oh=584a311ead4194382fb3340fb3d2aa68&oe=5F8FA47A" />
+                    <RecommendedMeal title="Tallarines salteados" image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/80308779_3309508445786733_2992348077840400384_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=NQCuBTBA5MsAX-UTJuh&_nc_ht=scontent.flim9-1.fna&oh=e3071e79e0f01476f8ce520cf1cf3a1f&oe=5F9D29F4" />
+                    <RecommendedMeal  title="Combinado de Calamar" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/461703_285899748147633_33065499_o.jpg?_nc_cat=101&_nc_sid=7aed08&_nc_ohc=S57X7po5Q1kAX8RbZI8&_nc_ht=scontent.flim9-1.fna&oh=c62eb38c3643365a8fd1771b9c1077a6&oe=5F9ED01D"/>
                     <RecommendedMeal  title="Saltadito con hongos" image="https://scontent.flim13-1.fna.fbcdn.net/v/t31.0-8/329160_418773264860280_2016262609_o.jpg?_nc_cat=110&_nc_sid=e007fa&_nc_eui2=AeGjNYEE6gT_dce5_wt9jpRv7028AT2PYr_vTbwBPY9ivx9bQJimuQMih5SblI4zlKc&_nc_ohc=fcIgniADsIAAX8dMeIe&_nc_ht=scontent.flim13-1.fna&oh=14c7b0d573c7ef0cc16f31fb35fc2e9f&oe=5F8FD7C0"/>
                 </div>
                 <SectionTitle title="Qué dice la gentita?" />
