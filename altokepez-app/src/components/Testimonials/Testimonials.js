@@ -139,7 +139,6 @@ const Testimonials = (props) => {
           pages.map((_,index) => (
             <p className="testimonials__pageSwitcher" key={index} onClick={()=>{
               setPage(index);
-              //console.log("page-index", index);
             }}>X</p>
           ))
         }

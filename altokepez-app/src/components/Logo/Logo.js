@@ -1,5 +1,5 @@
 import React from 'react';
-import altokepezLogo from '../../assets/images/logo-rectangular.jpg';
+import altokepezLogo from '../../assets/images/logo-altokepez.jpg';
 import './Logo.scss';
 
 const Logo = props => {

@@ -2,19 +2,56 @@
 .testimonials{
     display: flex;
     transition: all .7s ease-out;
-    margin: 5rem 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
 }
 
 .testimony{
-    
+    border: 1px solid lightgray;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0 .7rem;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+
+// .testimony:after{
+//     content: '';
+//     background: radial-gradient(ellipse , rgba(0,0,0, .4) 0%, rgba(0,0,0,0) 80%);
+//     width: 60%;
+//     height: 5px;
+//     position: absolute;
+//     bottom: 0%;
+//     left: 20%;
+//     opacity: 0;
+//     transition: all .4s ease-in-out;
+// }
+
+// .testimony:hover:after{
+//     opacity: 1;
+//     bottom: -4%;
+// }
+
+.testimony:hover{
+    transform: translateY(-3%);
+    box-shadow: 0px 4px 15px -10px rgb(0,0,0);
 }
 
 .testimony__photo{
-
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .testimony__name{
-
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .testimony__comment{
