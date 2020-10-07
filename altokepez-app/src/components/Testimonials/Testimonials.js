@@ -26,15 +26,19 @@ const Testimonials = (props) => {
   const [pages, setPages] = useState(Array(Math.ceil(props.comments.length / testimoniesPerPage)).fill(''));
 
   useEffect(() => {
-    console.log("window", window);
+    let perpage = 0;
     const bodyWidth = window.document.documentElement.clientWidth;
     if(bodyWidth >= userIconDisapearMobileBreakpoint){
-      setTestimoniesPerPage(props.perpage);
+      perpage = props.perpage;
     }else if(bodyWidth >= lastSmallestBreakpoint){
-      setTestimoniesPerPage(2);
+      perpage = 2;
+      
     }else{
-      setTestimoniesPerPage(1);
+      perpage = 1;
     }
+
+    setTestimoniesPerPage(perpage);
+    setPages(Array(props.comments.length / perpage).fill(''));
   },[]);
  
   useEffect(() => {

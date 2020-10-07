@@ -57,6 +57,13 @@
     margin-bottom: 6rem;
 }
 
+.home__clasicos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-bottom: 5rem;
+}
+
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .recommended{
        flex-direction: column;

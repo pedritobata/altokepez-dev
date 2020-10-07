@@ -1,0 +1,75 @@
+@import '../../design-constants/sass-variables';
+
+
+
+.productGeneric{
+    max-width: var(--maxwidth-product-generic);
+    height: var(--maxheight-product-generic);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0.30;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.productGeneric__image{
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.productGeneric__image:hover{
+    filter: brightness(.5);
+
+}
+
+.productGeneric__title{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.productGeneric__options{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 43%;
+    bottom: 35%;
+    left: calc(50% - var(--maxwidth-product-generic) * 0.43 / 2);
+    visibility: hidden;
+    transition: all .2s ease-in;
+}
+
+.productGeneric__options--visible
+{
+    visibility: visible;
+    transform: translateY(-45%);
+}
+
+.productGeneric__optionsIcon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease-in-out;
+}
+
+.productGeneric__optionsIcon:hover{
+    background-color: var(--red-catchy);
+    color: white;
+}
+
+@media (max-width: $sidedrawer-sweetspot-mobile){
+    .productGeneric{
+        max-width: 160px;
+        max-height: 150px;
+       margin-bottom: 4.1rem;
+    }
+
+}

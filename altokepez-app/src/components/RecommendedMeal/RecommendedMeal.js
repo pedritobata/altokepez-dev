@@ -13,7 +13,7 @@ const RecommendedMeal = (props) => {
         </div>
         <div className="recommended-meal__shop">
         <h3 className="recommended-meal__title">{props.title}</h3>
-        <Button light value="comprar" />
+        <Button light value="ver plato" />
       </div>
     </div>
   );
