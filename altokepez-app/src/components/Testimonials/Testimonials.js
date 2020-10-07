@@ -24,6 +24,18 @@ const Testimonials = (props) => {
   const [page, setPage] = useState(0);
   const [testimoniesPerPage, setTestimoniesPerPage] = useState(props.perpage);
   const [pages, setPages] = useState(Array(Math.ceil(props.comments.length / testimoniesPerPage)).fill(''));
+
+  useEffect(() => {
+    console.log("window", window);
+    const bodyWidth = window.document.documentElement.clientWidth;
+    if(bodyWidth >= userIconDisapearMobileBreakpoint){
+      setTestimoniesPerPage(props.perpage);
+    }else if(bodyWidth >= lastSmallestBreakpoint){
+      setTestimoniesPerPage(2);
+    }else{
+      setTestimoniesPerPage(1);
+    }
+  },[]);
  
   useEffect(() => {
     const resizeWindowListener = (event) => {
@@ -137,9 +149,9 @@ const Testimonials = (props) => {
         {
           
           pages.map((_,index) => (
-            <p className="testimonials__pageSwitcher" key={index} onClick={()=>{
+            <span className={`testimonials__pageSwitcher ${page === index ? "colored" : ""}`} key={index} onClick={()=>{
               setPage(index);
-            }}>X</p>
+            }}></span>
           ))
         }
       </div>

@@ -1,9 +1,10 @@
 
+
 .testimonials{
     display: flex;
     transition: all .7s ease-out;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     padding: 1rem 0;
 }
 
@@ -17,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-out;
 }
 
 // .testimony:after{
@@ -59,10 +60,23 @@
 }
 
 .testimonials__pageSwitchersContainer{
-
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .testimonials__pageSwitcher{
+    background-color: lightgrey;
+    height: 4px;
+    width: 3vw;
     cursor: pointer;
+    border-radius: 10px;
+    margin: 0 .4rem;
+    transition: all .2s ease-in-out;
+}
+
+.colored{
+    background-color: var(--red-catchy);
+    width: 4.5vw;
 }
 
