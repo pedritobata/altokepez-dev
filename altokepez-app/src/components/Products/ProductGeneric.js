@@ -35,7 +35,7 @@ const ProductGeneric = (props) => {
               <Icon
                 color={hoverColorBagIcon}
                 iconName="bag"
-                size="1.1rem"
+                size="1.7rem"
               />
             </NavLink>
         </div>
@@ -46,7 +46,7 @@ const ProductGeneric = (props) => {
               <Icon
                 color={hoverColorSearchIcon}
                 iconName="search"
-                size="1.1rem"
+                size="1.7rem"
               />
             </NavLink>
         </div>

@@ -44,7 +44,7 @@ const Toolbar = (props) => {
             <Icon
               color="black"
               iconName="person"
-              hiddenMobile
+              hidden
               clicked={props.loginClicked}
               size={`calc(${mainIconDefaultSize} + 0.3rem)`}
             />
