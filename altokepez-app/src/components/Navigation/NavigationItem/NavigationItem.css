@@ -1,7 +1,7 @@
 
 .nav-item {
     display: inline-block;
-    margin: 0 1.3rem;
+    margin: 0 .8rem;
 } 
 
 
@@ -9,7 +9,7 @@
    
         font-family: inherit;
         /* font-style: normal; */
-        font-weight: 800;
+        font-weight: 900;
         font-size: 1.02rem;
         /* padding: 0 20px; */
         color: black;

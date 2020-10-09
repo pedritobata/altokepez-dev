@@ -1,7 +1,6 @@
 @import '../../design-constants/sass-variables';
 
 
-
 .productGeneric{
     max-width: var(--maxwidth-product-generic);
     height: var(--maxheight-product-generic);
@@ -45,7 +44,7 @@
 .productGeneric__options--visible
 {
     visibility: visible;
-    transform: translateY(-45%);
+    transform: translateY(-35%);
 }
 
 .productGeneric__optionsIcon{
@@ -58,11 +57,11 @@
     justify-content: center;
     align-items: center;
     transition: background-color .3s ease-in-out;
+    cursor: pointer;
 }
 
 .productGeneric__optionsIcon:hover{
     background-color: var(--red-catchy);
-    color: white;
 }
 
 @media (max-width: $sidedrawer-sweetspot-mobile){
@@ -70,6 +69,14 @@
         max-width: 160px;
         max-height: 150px;
        margin-bottom: 4.1rem;
+    }
+
+    .productGeneric__options{
+        display: none;
+    }
+
+    .productGeneric__options--visible{
+        display: none;
     }
 
 }

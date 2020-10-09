@@ -7,6 +7,10 @@
 }
 
 
+// .bicon > svg:hover{
+//     fill: white;
+// }
+
 
 
 
@@ -17,7 +21,7 @@
 } */
 @include disapear-on-breakpoint-by-classname($discount-box-medium-breakpoint, "disapear");
 
-@include disapear-on-breakpoint-by-classname($user-icon-disapear-mobile-breakpoint, "disapear-mobile");
+@include disapear-on-breakpoint-by-classname($discount-box-medium-breakpoint, "disapear-mobile");
 
 /* @media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
     .disapear-mobile{

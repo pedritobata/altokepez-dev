@@ -23,6 +23,7 @@ const Icon = props => {
       ${props.hiddenMobile ? 'disapear-mobile' : ''}`}
       onClick={props.clicked}>
       <BIcon
+      className="font-weight-bolder"
       color={props.color}
       alt={props.iconName} 
       size={props.size}

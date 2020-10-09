@@ -28,18 +28,18 @@ const Toolbar = (props) => {
 
   return (
     <header className={`container-v1 header ${sticky}`}>
-      <div className="row bar border-bottom-0 align-items-center">
-        <div className="col-3 d-flex align-items-center">
+      <div className="header__bar">
+        <div className="header__left">
           <BurgerMenuIcon clicked={props.onShowSideDrawer}/>
-          <Logo />
-        </div>
-        <div className="col-6">
-          <nav className="nav-items--chirrion">
+           <nav className="nav-items--chirrion">
             <NavigationItems />
           </nav>
+        </div>
+        <div className="header__main">
+        
           <h2 className="main-title main-title--chirrin">al toke pez</h2>
         </div>
-        <div className="col-3 d-flex justify-content-end align-items-center">
+        <div className="header__right">
           <NavLink to="#" exact>
             <Icon
               color="black"
