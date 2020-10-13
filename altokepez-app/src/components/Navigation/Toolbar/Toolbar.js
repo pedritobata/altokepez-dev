@@ -65,7 +65,7 @@ const Toolbar = (props) => {
           />
           </NavLink>
          
-          <CatchyBox text="Delivery" />
+          <CatchyBox text="Ver Carta" />
         </div>
       </div>
     </header>

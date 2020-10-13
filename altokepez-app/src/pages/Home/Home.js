@@ -80,7 +80,7 @@ class Home extends React.Component{
                         <RecommendedMeal  title="Combinado de Calamar" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/461703_285899748147633_33065499_o.jpg?_nc_cat=101&_nc_sid=7aed08&_nc_ohc=S57X7po5Q1kAX8RbZI8&_nc_ht=scontent.flim9-1.fna&oh=c62eb38c3643365a8fd1771b9c1077a6&oe=5F9ED01D"/>
                         <RecommendedMeal  title="Saltadito con hongos" image="https://scontent.flim13-1.fna.fbcdn.net/v/t31.0-8/329160_418773264860280_2016262609_o.jpg?_nc_cat=110&_nc_sid=e007fa&_nc_eui2=AeGjNYEE6gT_dce5_wt9jpRv7028AT2PYr_vTbwBPY9ivx9bQJimuQMih5SblI4zlKc&_nc_ohc=fcIgniADsIAAX8dMeIe&_nc_ht=scontent.flim13-1.fna&oh=14c7b0d573c7ef0cc16f31fb35fc2e9f&oe=5F8FD7C0"/>
                     </div>
-                    <SectionTitle title="Algunos clásicos" />
+                    <SectionTitle title="Algunos clásicos y ofertas" />
                     <div className="home__clasicos">
                         <ProductGeneric title="Pescado frito"  image="https://media-cdn.tripadvisor.com/media/photo-w/0c/43/52/e2/fried-fish.jpg" />
                         <ProductGeneric title="Combinado mixto"  image="https://media-cdn.tripadvisor.com/media/photo-w/13/e8/9a/d5/mixto.jpg" />
