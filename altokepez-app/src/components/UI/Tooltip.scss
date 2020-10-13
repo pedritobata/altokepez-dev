@@ -1,0 +1,24 @@
+
+.tooltipCustom{
+    background-color: black;
+    color: white;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 3px 5px;
+    white-space: nowrap;
+    position: absolute;
+    transition: all .2s ease-in;
+    top: -31px; /*calculado de acuerdo al tamaño total del tooltip con su flechita*/
+}
+
+.tooltipCustom:after{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: calc(50% - 10px);
+
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: black transparent transparent transparent ; 
+}

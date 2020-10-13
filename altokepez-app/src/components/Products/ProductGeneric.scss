@@ -7,6 +7,7 @@
     flex-direction: column;
     margin-bottom: 5rem;
     position: relative;
+   
 }
 
 .productGeneric__image{
@@ -14,12 +15,13 @@
     height: var(--maxheight-product-generic-lg);
     object-fit: cover;
     cursor: pointer;
+    box-shadow: 2px 1px 10px -4px black;
 }
 
-.productGeneric__image:hover{
+/* .productGeneric__image:hover{
     filter: brightness(.5);
 
-}
+} */
 
 .productGeneric__title{
     font-size: 1rem;
@@ -56,6 +58,7 @@
     align-items: center;
     transition: background-color .3s ease-in-out;
     cursor: pointer;
+  
 }
 
 .productGeneric__optionsIcon:hover{
