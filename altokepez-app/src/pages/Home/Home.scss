@@ -4,6 +4,12 @@
     overflow-x: hidden;
 }
 
+.home__container{
+    max-width: var(--home-container-width);
+    margin: auto;
+    overflow-x: hidden;
+}
+
 .introduction{
     display: flex;
     justify-content: center;
@@ -119,5 +125,9 @@
 
     .introduction__author{
         font-size: 1rem;
+    }
+
+    .recommended{
+        justify-content: center;
     }
 }

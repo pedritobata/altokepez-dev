@@ -26,7 +26,6 @@ const Login = (props) => {
     }
 
     return (
-        <div>
        
         <section className="login__container">
             <h1 className="login__title">Please Sign in</h1>
@@ -43,7 +42,6 @@ const Login = (props) => {
             </div>
         {props.authError && <p>{props.authError.message}</p>}
         </section>
-    </div> 
     );
 }
 

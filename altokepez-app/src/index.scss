@@ -23,11 +23,17 @@
     --custom-secondary: #3131fa;
     --red-catchy: #f0003f;
     --discount-box-width: 30%;
-    --discount-box-height: 20%;
+    --discount-box-height: 40%;
     --discount-box-small-breakpoint: 768px;
     --discount-box-medium-breakpoint: 1024px;
-    --maxwidth-product-generic: 320px;
-    --maxheight-product-generic: 370px;
+    --home-container-width: 90vw;
+    --maxwidth-product-generic-lg: calc(var(--home-container-width) * 0.23);
+    --maxheight-product-generic-lg: calc(var(--home-container-width) * 0.23);
+    --maxwidth-product-generic-md: calc(var(--home-container-width) * 0.30);
+    --maxheight-product-generic-md: calc(var(--home-container-width) * 0.30);
+    --maxwidth-product-generic-sm: calc(var(--home-container-width) * 0.44);;
+    --maxheight-product-generic-sm: calc(var(--home-container-width) * 0.44);;
+   
 }
 
 html {

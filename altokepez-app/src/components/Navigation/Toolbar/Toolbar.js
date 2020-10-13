@@ -55,6 +55,7 @@ const Toolbar = (props) => {
             hidden
             size={mainIconDefaultSize}
           /> */}
+          <NavLink to="#" exact>
           <Icon
             color="black"
             iconName="cart"
@@ -62,6 +63,8 @@ const Toolbar = (props) => {
             hiddenMobile
             size={mainIconDefaultSize}
           />
+          </NavLink>
+         
           <CatchyBox text="Delivery" />
         </div>
       </div>
