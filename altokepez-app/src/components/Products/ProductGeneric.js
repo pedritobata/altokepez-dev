@@ -19,6 +19,7 @@ const ProductGeneric = (props) => {
 
   return (
     <div className="productGeneric" >
+      {props.children}
       <img
       style={{filter:`${showOptions ? 'brightness(0.5)' : 'brightness(1)'}`}}
       onClick={imageClickHandler}

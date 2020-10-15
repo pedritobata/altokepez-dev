@@ -7,6 +7,8 @@ import './Home.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import ProductGeneric from '../../components/Products/ProductGeneric';
+import DiscountBadge from '../../components/UI/DiscountBadge';
+import Icon from '../../components/Icon/Icon';
 
 
 class Home extends React.Component{
@@ -82,18 +84,41 @@ class Home extends React.Component{
                     </div>
                     <SectionTitle title="Algunos clásicos y ofertas" />
                     <div className="home__clasicos">
-                        <ProductGeneric title="Pescado frito"  image="https://media-cdn.tripadvisor.com/media/photo-w/0c/43/52/e2/fried-fish.jpg" />
+                        <ProductGeneric title="Pescado frito"  image="https://media-cdn.tripadvisor.com/media/photo-w/0c/43/52/e2/fried-fish.jpg">
+                            <DiscountBadge text="Oferta" />
+                        </ProductGeneric>
                         <ProductGeneric title="Combinado mixto"  image="https://media-cdn.tripadvisor.com/media/photo-w/13/e8/9a/d5/mixto.jpg" />
                         <ProductGeneric title="Cebiche de Pota"  image="https://media-cdn.tripadvisor.com/media/photo-m/1280/17/31/80/f3/photo0jpg.jpg" />
-                        <ProductGeneric title="Paella"  image="https://media-cdn.tripadvisor.com/media/photo-w/11/c8/45/df/soup-delicious-and-very.jpg" />
+                        <ProductGeneric title="Paella"  image="https://media-cdn.tripadvisor.com/media/photo-w/11/c8/45/df/soup-delicious-and-very.jpg">
+                            <DiscountBadge text="Oferta" />
+                        </ProductGeneric>
                         <ProductGeneric title="Chicharrón de Calamar"  image="https://media-cdn.tripadvisor.com/media/photo-o/18/2f/90/c4/img-20190704-153158-largejpg.jpg" />
-                        <ProductGeneric title="Trío marino"  image="https://media-cdn.tripadvisor.com/media/photo-w/14/96/1f/e0/al-toke-pez.jpg" />
+                        <ProductGeneric title="Trío marino"  image="https://media-cdn.tripadvisor.com/media/photo-w/14/96/1f/e0/al-toke-pez.jpg">
+                            <DiscountBadge text="Oferta" />
+                        </ProductGeneric>
                         <ProductGeneric title="Trío bravazo"  image="https://media-cdn.tripadvisor.com/media/photo-w/12/f5/a4/29/photo0jpg.jpg" />
                         <ProductGeneric title="Combo personal"  image="https://media-cdn.tripadvisor.com/media/photo-o/09/1b/b6/77/al-toke-pez.jpg" />
                     </div>
                     <SectionTitle title="Qué dice la gentita?" />
                     <Testimonials  comments={this.state.comments} perpage={3} />
                 </div>
+                <section className="home__contact">
+                    <h2 className="home__contact__title">
+                        Suscríbete a nuestras notificaciones y novedades
+                    </h2>
+                    <p className="home__contact__subTitle">Déjanos tu email y podrás recibir ofertas, anuncios e 
+                    invitaciones especiales</p>
+                    <form className="home__contact__form">
+                        <input type="text"  /> 
+                        <button type="submit">
+                        <Icon
+                            color="black"
+                            iconName="envelope-fill"
+                            size="1.5rem"
+                        />
+                        </button>
+                    </form>
+                </section>
             </main>
         );
     }

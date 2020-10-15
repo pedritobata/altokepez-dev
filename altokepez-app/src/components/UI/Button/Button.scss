@@ -2,7 +2,7 @@
 
 .button{
   
-    padding: 4.3% 10%;
+    padding: .9rem 1.8rem;
     background-color: black;
     color: white;
     border: 0;
@@ -35,12 +35,9 @@
     color: white;
 }
 
-@media (max-width: $user-icon-disapear-mobile-breakpoint){
+@media (min-width: $discount-box-medium-breakpoint){
     .button{
-    //    height: 2.8rem;
-    //     padding: 6px 17px;
-        // letter-spacing: 1px;
-        // font-size: .8rem;
+        padding: .8rem 1.6rem;
     }
 }
 
@@ -50,5 +47,6 @@
         padding: 4px 13px; */
        /*  letter-spacing: 2px; */
         font-size: .6rem;
+        padding: 0.9rem 1.8rem;
     }
   } 

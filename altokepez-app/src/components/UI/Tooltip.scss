@@ -5,11 +5,11 @@
     margin: 0;
     border-radius: 5px;
     font-size: 13px;
-    padding: 3px 5px;
+    padding: 7px 7px 4px;
     white-space: nowrap;
     position: absolute;
     transition: all .2s ease-in;
-    top: -31px; /*calculado de acuerdo al tamaño total del tooltip con su flechita*/
+    top: -37px; /*calculado de acuerdo al tamaño total del tooltip con su flechita*/
 }
 
 .tooltipCustom:after{
