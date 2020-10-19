@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: rgb(21, 24, 27);
     opacity: .8;
-    z-index: 9;
+    z-index: 40;
     animation: showup-effect .3s;
     /* animation-delay: .1s; */
     position: fixed;

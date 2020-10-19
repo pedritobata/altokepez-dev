@@ -13,7 +13,7 @@ const ProductGeneric = (props) => {
     const[showTooltipSearchIcon, setShowTooltipSearchIcon] = useState(false);
 
     const imageClickHandler = () => {
-      setShowOptions(false);
+      //setShowOptions(false);
     }
 
 
@@ -23,6 +23,7 @@ const ProductGeneric = (props) => {
       <img
       style={{filter:`${showOptions ? 'brightness(0.5)' : 'brightness(1)'}`}}
       onClick={imageClickHandler}
+
         onMouseOver={() => setShowOptions(true)}
         onMouseLeave={() => setShowOptions(false)}
         className="productGeneric__image"

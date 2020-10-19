@@ -103,21 +103,24 @@ class Home extends React.Component{
                     <Testimonials  comments={this.state.comments} perpage={3} />
                 </div>
                 <section className="home__contact">
-                    <h2 className="home__contact__title">
-                        Suscríbete a nuestras notificaciones y novedades
-                    </h2>
-                    <p className="home__contact__subTitle">Déjanos tu email y podrás recibir ofertas, anuncios e 
-                    invitaciones especiales</p>
-                    <form className="home__contact__form">
-                        <input type="text"  /> 
-                        <button type="submit">
-                        <Icon
-                            color="black"
-                            iconName="envelope-fill"
-                            size="1.5rem"
-                        />
-                        </button>
-                    </form>
+                    <div className="home__contact--background"></div>
+                    <div className="home__contact--front">
+                        <h2 className="home__contact__title">
+                            Suscríbete a nuestras notificaciones y novedades
+                        </h2>
+                        <p className="home__contact__subTitle">Déjanos tu email y podrás recibir ofertas, anuncios e 
+                        invitaciones especiales</p>
+                        <form className="home__contact__form">
+                            <input type="text"  placeholder="Ingresa tu email"/> 
+                            <button type="button">
+                            <Icon
+                                color="white"
+                                iconName="envelope-fill"
+                                size="1.5rem"
+                            />
+                            </button>
+                        </form>
+                    </div>
                 </section>
             </main>
         );

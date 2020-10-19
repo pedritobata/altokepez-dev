@@ -70,6 +70,75 @@
     margin-bottom: 5rem;
 }
 
+.home__contact{
+    position: relative;
+    width: 100vw;
+    min-height: 55vh;
+    background-image: url("https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+}
+
+.home__contact--background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    position: absolute;
+    top: 0;
+    z-index: 8;
+}
+
+.home__contact--front{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    position: absolute;
+    z-index: 10;
+}
+
+.home__contact__title{
+    color: white;
+    font-size: bold;
+    text-align: center;
+}
+
+.home__contact__subTitle{
+    color: white;
+    text-align: center;
+}
+
+.home__contact__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__contact__form > input{
+    width: 40vw;
+    height: 3.2rem;
+    padding: 1.5rem;
+    outline: none;
+}
+
+.home__contact__form > button{
+    width: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.15rem;
+    outline: none;
+    // padding: .2rem;
+    border: none;
+    background-color: var(--red-catchy);
+}
+
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .recommended{
        flex-direction: column;
@@ -129,5 +198,10 @@
 
     .recommended{
         justify-content: center;
+    }
+
+    .home__contact__form > input{
+        width: 60vw;
+     
     }
 }

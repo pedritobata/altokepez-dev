@@ -137,7 +137,10 @@
         max-width: var(--maxwidth-product-generic-sm);
     }
 
-    
+    .productGeneric__image{
+        width: var(--maxwidth-product-generic-xs);
+        height: var(--maxheight-product-generic-xs);
+    }
 
     .productGeneric__options{
         display: none;
