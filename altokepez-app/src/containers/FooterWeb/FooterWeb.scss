@@ -1,0 +1,143 @@
+@import '../../design-constants/sass-variables';
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__sectionMain {
+//    min-width: 24%;
+
+}
+
+.footer__mainTitle {
+  font-family: "Rock Salt", cursive;
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 3rem;
+  color: var(--red-catchy);
+}
+
+.footer__subtitle {
+    max-width: 220px;
+}
+
+.footer__redes{
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.footer__redes li{
+    width: 1.4rem;
+    margin-right: 1.2rem;
+}
+
+
+.contactosIcon{
+    display: flex;
+    align-items: center;
+}
+
+.contactosIcon > p{
+    margin: 0;
+}
+
+.contactosIcon svg{
+    width: 1rem;
+    margin-right: 5px;
+}
+
+
+.ccIcons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.ccIcons > svg{
+    width: 1.6rem;
+    margin-right: 8px;
+}
+
+.footer__section{
+    //  min-width: 24%;
+  
+}
+
+.footer__section h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__section .separator {
+  display: inline-block;
+  background-color: black;
+  width: 1.8rem;
+  height: 1px;
+  margin: 0.6rem 0 1.3rem;
+}
+
+.footer__section ul li {
+  font-size: 15px;
+  margin-bottom: 0.7rem;
+}
+
+.footer__section ul li a,
+.footer__redes li a  {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__section ul li a:hover,
+.footer__redes li a:hover  {
+  color: var(--red-catchy);
+}
+
+
+@media (max-width: $user-icon-disapear-mobile-breakpoint){
+
+    .footer {
+       grid-template-columns: 1fr 1fr;
+       grid-row-gap: 4rem;
+       justify-items: baseline;
+       padding-left: 15%;
+    }
+
+    .footer__mainTitle {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: $last-smallest-breakpoint){
+
+    .footer {
+    //    grid-template-columns: 1fr;
+    //    grid-row-gap: 4rem;
+    //    justify-items: start;
+    padding: 10px;
+    }
+
+    .footer__sectionMain {
+        padding-left: 10px;
+    }
+
+    .footer__section{
+        padding-left: 10px;
+    }
+
+    .footer__mainTitle {
+        font-size: 14px;
+    }
+
+  
+}
+

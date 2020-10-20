@@ -9,6 +9,7 @@ import Testimonials from '../../components/Testimonials/Testimonials';
 import ProductGeneric from '../../components/Products/ProductGeneric';
 import DiscountBadge from '../../components/UI/DiscountBadge';
 import Icon from '../../components/Icon/Icon';
+import FooterWeb from '../../containers/FooterWeb/FooterWeb';
 
 
 class Home extends React.Component{
@@ -122,6 +123,7 @@ class Home extends React.Component{
                         </form>
                     </div>
                 </section>
+                <FooterWeb  />
             </main>
         );
     }
