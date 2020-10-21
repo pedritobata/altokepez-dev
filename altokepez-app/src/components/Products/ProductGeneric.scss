@@ -65,6 +65,9 @@
     background-color: var(--red-catchy);
 }
 
+
+
+
 @media (max-width: $discount-box-large-breakpoint){
     
 .productGeneric__image{
@@ -89,45 +92,45 @@
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     
     .productGeneric__image{
-        width: var(--maxwidth-product-generic-sm);
-        height: var(--maxheight-product-generic-sm);
+        width: var(--maxwidth-product-generic-xs);
+        height: var(--maxheight-product-generic-xs);
       
     }
 
     .productGeneric__optionsIcon{
-        width: calc(var(--maxwidth-product-generic-sm) * 0.17);
-         height: calc(var(--maxwidth-product-generic-sm) * 0.17);
+        width: calc(var(--maxwidth-product-generic-xs) * 0.17);
+         height: calc(var(--maxwidth-product-generic-xs) * 0.17);
     }
 
     .productGeneric__options{
    
-        left: calc(50% - var(--maxwidth-product-generic-sm) * 0.43 / 2);
+        left: calc(50% - var(--maxwidth-product-generic-xs) * 0.43 / 2);
        
     }
     
 }
 
-@media (max-width: $last-smallest-breakpoint){
+// @media (max-width: $last-smallest-breakpoint){
 
-    .productGeneric__options{
-        width: 50%;
-        left: calc(50% - var(--maxwidth-product-generic-sm) * 0.50 / 2);
+//     .productGeneric__options{
+//         width: 50%;
+//         left: calc(50% - var(--maxwidth-product-generic-sm) * 0.50 / 2);
        
-    }
+//     }
 
-    .productGeneric__optionsIcon{
+//     .productGeneric__optionsIcon{
   
-         padding: 1.2rem; 
-    }
+//          padding: 1.2rem; 
+//     }
 
-    .bicon > svg{
-        width: 1.1rem;
-        height: 1.1rem;
-    }
-}
+//     .bicon > svg{
+//         width: 1.1rem;
+//         height: 1.1rem;
+//     }
+// }
 
 
-@media (max-width: $sidedrawer-sweetspot-mobile){
+@media (max-width: $last-smallest-breakpoint){
     .productGeneric{
        margin-bottom: 4.1rem;
     }

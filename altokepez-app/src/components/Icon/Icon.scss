@@ -21,7 +21,7 @@
 } */
 @include disapear-on-breakpoint-by-classname($discount-box-medium-breakpoint, "disapear");
 
-@include disapear-on-breakpoint-by-classname($sidedrawer-sweetspot-mobile, "disapear-mobile");
+@include disapear-on-breakpoint-by-classname($last-smallest-breakpoint, "disapear-mobile");
 
 /* @media screen and (max-width: $user-icon-disapear-mobile-breakpoint){
     .disapear-mobile{
