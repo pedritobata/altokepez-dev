@@ -27,9 +27,9 @@
     }
 }
 
-// @media (max-width: $last-smallest-breakpoint) {
-//     .catchy-box{
-//         padding: .6rem;
-//         font-size: 1.2rem;
-//     }
-// }
+@media (max-width: $last-smallest-breakpoint) {
+    .catchy-box{
+        padding: .35rem;
+        font-size: 1rem;
+    }
+}
