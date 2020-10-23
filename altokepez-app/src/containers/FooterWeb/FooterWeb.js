@@ -23,10 +23,10 @@ const FooterWeb = (props) => {
               <a href="https://www.facebook.com/Al-TOKE-PEZ-275646575839617/"><FacebookIcon  /></a>
           </li>
           <li>
-              <a href="#"><InstagramIcon  /></a>
+              <a href=""><InstagramIcon  /></a>
           </li>
           <li>
-              <a href="#"><TwitterIcon  /></a>
+              <a href=""><TwitterIcon  /></a>
           </li>
         </ul>
       </div>

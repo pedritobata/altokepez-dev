@@ -6,9 +6,15 @@ const NavigationItems = props => {
 
     return (
         <ul className="nav">
-            <NavigationItem exact link="/home">Home</NavigationItem>
-            <NavigationItem exact link="/about">Nosotros</NavigationItem>
-            <NavigationItem exact link="/contact">Contacto</NavigationItem>
+            <li>
+                <a  href="#homeId">Home</a>
+            </li>
+            <li>
+                <a  href="#introductionId">Nosotros</a>
+            </li>
+            <li>
+                <a  href="#contactoId">Contacto</a>
+            </li>
         </ul>
     );
 }

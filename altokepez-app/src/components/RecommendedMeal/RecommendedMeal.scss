@@ -6,6 +6,8 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 2rem;
+
+    transition: all .5s ease-out;
 }
 
 .recommended-meal__container{
@@ -43,6 +45,28 @@
     transform: translateY(-50%);
     left: 3%;
 }
+
+.recommended-meal--offsetRight{
+    opacity: 0;
+    transform: translateX(20vw);
+}
+
+.recommended-meal--fadeInRight{
+    opacity: 1;
+    transform: translateX(0vw);
+}
+
+.recommended-meal--offsetLeft{
+    opacity: 0;
+    transform: translateX(-20vw);
+}
+
+.recommended-meal--fadeInLeft{
+    opacity: 1;
+    transform: translateX(0vw);
+}
+
+
 
 @media (max-width: $user-icon-disapear-mobile-breakpoint){
     .recommended-meal__title{

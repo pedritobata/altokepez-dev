@@ -8,6 +8,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all .6s ease-in;
+}
+
+.services__container--fadeInbottom{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 

@@ -57,10 +57,10 @@ class Home extends React.Component{
 
         
         return (
-            <main className="home">
+            <main className="home" id="homeId">
                 <Banner  />
                 <Services  />
-                <div className="introduction">
+                <div className="introduction" id="introductionId">
                     <img src="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-0/c0.34.206.206a/p206x206/169552_418773321526941_1185790091_o.jpg?_nc_cat=108&_nc_sid=cdbe9c&_nc_eui2=AeFYMq8Ctj0sVHANgDXN9fFmqVwEOX8AMfupXAQ5fwAx--4F8EhDx7kTMuRwCa3GiY0&_nc_ohc=KJWoUUh0k3MAX_OSW5T&_nc_ht=scontent.flim9-1.fna&_nc_tp=27&oh=071342ced36873ae6b496d6c9a599696&oe=5F94A3CB" 
                     alt="Altoke pez" 
                     className="introduction__image"/>
@@ -78,10 +78,10 @@ class Home extends React.Component{
                 <div className="home__container">
                     <SectionTitle title="Hoy te recomiendo" />
                     <div className="recommended">
-                        <RecommendedMeal title="Cachetitos de Róbalo" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/54079_418776008193339_1635302210_o.jpg?_nc_cat=105&ccb=2&_nc_sid=e007fa&_nc_ohc=XBbTC0hjjasAX_qAtb-&_nc_ht=scontent.flim9-1.fna&oh=59867def729c2a8f15c31c0e46626916&oe=5FB60E0D" />
-                        <RecommendedMeal title="Tallarines salteados" image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/80308779_3309508445786733_2992348077840400384_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=NQCuBTBA5MsAX-UTJuh&_nc_ht=scontent.flim9-1.fna&oh=e3071e79e0f01476f8ce520cf1cf3a1f&oe=5F9D29F4" />
-                        <RecommendedMeal  title="Combinado de Calamar" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/461703_285899748147633_33065499_o.jpg?_nc_cat=101&_nc_sid=7aed08&_nc_ohc=S57X7po5Q1kAX8RbZI8&_nc_ht=scontent.flim9-1.fna&oh=c62eb38c3643365a8fd1771b9c1077a6&oe=5F9ED01D"/>
-                        <RecommendedMeal  title="Leche de Tigre" image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/79908155_3319135381490706_6780833648972136448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=8024bb&_nc_ohc=SOZDw-87VMUAX97wjyb&_nc_ht=scontent.flim9-1.fna&oh=f9dea9634bed366d9a63c3eef9a68e70&oe=5FB694D7"/>
+                        <RecommendedMeal id="recommended1" title="Cachetitos de Róbalo" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/54079_418776008193339_1635302210_o.jpg?_nc_cat=105&ccb=2&_nc_sid=e007fa&_nc_ohc=XBbTC0hjjasAX_qAtb-&_nc_ht=scontent.flim9-1.fna&oh=59867def729c2a8f15c31c0e46626916&oe=5FB60E0D" />
+                        <RecommendedMeal id="recommended2" title="Tallarines salteados" image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/80308779_3309508445786733_2992348077840400384_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=NQCuBTBA5MsAX-UTJuh&_nc_ht=scontent.flim9-1.fna&oh=e3071e79e0f01476f8ce520cf1cf3a1f&oe=5F9D29F4" />
+                        <RecommendedMeal id="recommended3" title="Combinado de Calamar" image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/461703_285899748147633_33065499_o.jpg?_nc_cat=101&_nc_sid=7aed08&_nc_ohc=S57X7po5Q1kAX8RbZI8&_nc_ht=scontent.flim9-1.fna&oh=c62eb38c3643365a8fd1771b9c1077a6&oe=5F9ED01D"/>
+                        <RecommendedMeal id="recommended4" title="Leche de Tigre" image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/79908155_3319135381490706_6780833648972136448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=8024bb&_nc_ohc=SOZDw-87VMUAX97wjyb&_nc_ht=scontent.flim9-1.fna&oh=f9dea9634bed366d9a63c3eef9a68e70&oe=5FB694D7"/>
                     </div>
                     <SectionTitle title="Algunos clásicos y ofertas" />
                     <div className="home__clasicos">
@@ -103,7 +103,7 @@ class Home extends React.Component{
                     <SectionTitle title="Qué dice la gentita?" />
                     <Testimonials  comments={this.state.comments} perpage={3} />
                 </div>
-                <section className="home__contact">
+                <section className="home__contact" id="contactoId">
                     <div className="home__contact--background"></div>
                     <div className="home__contact--front">
                         <h2 className="home__contact__title">

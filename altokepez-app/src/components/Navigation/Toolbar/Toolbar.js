@@ -13,17 +13,36 @@ const Toolbar = (props) => {
 
   useEffect(() => {
     function stickyOnScroll() {
-      window.addEventListener("scroll", () => {
         if (window.scrollY > 91) {
           setSticky("header--sticky");
         } else if (window.scrollY === 0) {
           setSticky("");
         }
-      });
     }
-    stickyOnScroll();
+    window.addEventListener("scroll", stickyOnScroll);
 
     return () => window.removeEventListener(stickyOnScroll);
+  }, []);
+
+  
+  useEffect(() => {
+    document.querySelectorAll("a[href^=\"#\"]").forEach(anchor => {
+      anchor.addEventListener("click", function(event){
+        event.preventDefault();
+        this.classList.add("activeLink");
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          alignToTop: true
+        })
+      } );
+
+      anchor.addEventListener("blur", function(event){
+        this.classList.remove("activeLink");
+      });
+    });
+
   }, []);
 
   return (
