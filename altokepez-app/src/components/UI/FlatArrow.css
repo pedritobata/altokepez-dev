@@ -1,0 +1,12 @@
+
+.flatArrow{
+    color: var(--red-catchy);
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+  
+}
+
+.flatArrow__extension{
+    padding-left: .7rem;
+}

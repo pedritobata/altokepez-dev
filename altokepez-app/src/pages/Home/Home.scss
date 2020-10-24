@@ -19,6 +19,20 @@
     padding: 5rem 0;
 }
 
+@keyframes shaking{
+    from{
+        transform: rotateZ(-1deg) scale(1.01);
+    }
+
+    to{
+        transform: rotateZ(1deg);
+    }
+}
+
+.introduction__image--shake{
+    animation: shaking .2s ease-in  10  none;
+}
+
 .introduction__image{
     width: 35%;
     object-fit: contain;
@@ -61,6 +75,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 6rem;
+    position: relative;
 }
 
 .home__clasicos{
@@ -68,6 +83,7 @@
     justify-content: space-around;
     flex-flow: row wrap;
     margin-bottom: 5rem;
+    position: relative;
 }
 
 .home__contact{
