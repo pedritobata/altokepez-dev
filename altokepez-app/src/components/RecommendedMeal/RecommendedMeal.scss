@@ -44,6 +44,12 @@
     top: 50%;
     transform: translateY(-50%);
     left: 3%;
+    z-index: 10;
+}
+
+.recommended-meal__shop:hover ~ .recommended-meal__container{
+    filter: brightness(50%);
+    transform: scale3d(1.05,1.05,1.05);
 }
 
 .recommended-meal--offsetRight{
