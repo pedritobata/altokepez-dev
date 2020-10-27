@@ -124,6 +124,7 @@ const Testimonials = (props) => {
 
   return (
     <>
+    <div className="testimonials__container">
       <div
         className="testimonials"
         style={{
@@ -151,17 +152,19 @@ const Testimonials = (props) => {
           );
         })}
       </div>
-      <div className="testimonials__pageSwitchersContainer">
-        {
-          
-          pages.map((_,index) => (
-            <span className={`testimonials__pageSwitcher ${page === index ? "colored" : ""}`} key={index} onClick={()=>{
-              setPage(index);
-            }}></span>
-          ))
-        }
-      </div>
-    </>
+     
+    </div>
+     <div className="testimonials__pageSwitchersContainer">
+     {
+       
+       pages.map((_,index) => (
+         <span className={`testimonials__pageSwitcher ${page === index ? "colored" : ""}`} key={index} onClick={()=>{
+           setPage(index);
+         }}></span>
+       ))
+     }
+   </div>
+   </>
   );
 };
 
