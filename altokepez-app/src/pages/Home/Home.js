@@ -77,7 +77,7 @@ class Home extends React.Component {
               triggerElement="#introductionId"
               classToggle="introduction__image--shake"
               reverse={false}
-              triggerHook="onCenter"
+              triggerHook="onEnd"
             >
               <img
                 src="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-0/c0.34.206.206a/p206x206/169552_418773321526941_1185790091_o.jpg?_nc_cat=108&_nc_sid=cdbe9c&_nc_eui2=AeFYMq8Ctj0sVHANgDXN9fFmqVwEOX8AMfupXAQ5fwAx--4F8EhDx7kTMuRwCa3GiY0&_nc_ohc=KJWoUUh0k3MAX_OSW5T&_nc_ht=scontent.flim9-1.fna&_nc_tp=27&oh=071342ced36873ae6b496d6c9a599696&oe=5F94A3CB"
