@@ -21,11 +21,11 @@
 
 @keyframes shaking{
     from{
-        transform: rotateZ(-1deg) scale(1.01);
+        transform: rotateZ(-0.6deg) scale(1.01);
     }
 
     to{
-        transform: rotateZ(1deg);
+        transform: rotateZ(0.6deg);
     }
 }
 

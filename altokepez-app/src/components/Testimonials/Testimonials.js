@@ -124,14 +124,14 @@ const Testimonials = (props) => {
 
   return (
     <>
-    <div className="testimonials__container">
+    <div className="testimonials__container" style={{overflowX : `${window.mobileCheck() ? 'scroll' : "hidden"}`}}>
       <div
         className="testimonials"
         style={{
           // 87 es el valor del ancho del container en Home. entonces sobre esa medida hay que 
           // posicionar el carrusel
           width: `calc(${props.comments.length / testimoniesPerPage} * 87vw`,
-          transform: `translateX(${-87 * page}vw)`
+          transform: `translateX(${-89 * page}vw)`
         }}
       >
         {props.comments.map((item) => {
@@ -154,16 +154,19 @@ const Testimonials = (props) => {
       </div>
      
     </div>
-     <div className="testimonials__pageSwitchersContainer">
-     {
-       
-       pages.map((_,index) => (
-         <span className={`testimonials__pageSwitcher ${page === index ? "colored" : ""}`} key={index} onClick={()=>{
-           setPage(index);
-         }}></span>
-       ))
-     }
-   </div>
+    {
+      !window.mobileCheck() &&  (<div className="testimonials__pageSwitchersContainer">
+      {
+        
+        pages.map((_,index) => (
+          <span className={`testimonials__pageSwitcher ${page === index ? "colored" : ""}`} key={index} onClick={()=>{
+            setPage(index);
+          }}></span>
+        ))
+      }
+    </div>)
+    }
+     
    </>
   );
 };

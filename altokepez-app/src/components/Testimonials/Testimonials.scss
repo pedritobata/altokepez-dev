@@ -1,7 +1,7 @@
 
-.testimonials__container{
-    overflow-x: scroll;
-}
+// .testimonials__container{
+//     overflow-x: scroll;
+// }
 
 .testimonials__container::-webkit-scrollbar{
     background-color:transparent;
@@ -10,7 +10,7 @@
 .testimonials{
     display: flex;
     transition: all .7s ease-out;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1.5rem 0;
    
