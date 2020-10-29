@@ -4,7 +4,7 @@
     width: fit-content;
     cursor: pointer;
     box-sizing: border-box;
-    display: none;
+    // display: none;
 }
 
 .burgermenuIcon > p{
@@ -22,6 +22,6 @@
 
 @media screen and (max-width: $discount-box-medium-breakpoint){
     .burgermenuIcon{
-       display: inline-block;
+       display: inline-block !important;
     }
 }

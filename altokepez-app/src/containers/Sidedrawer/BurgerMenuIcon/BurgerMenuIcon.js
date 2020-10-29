@@ -4,7 +4,7 @@ import './BurgerMenuIcon.scss';
 const BurgerMenuIcon = (props) => {
 
     return (
-        <div className="burgermenuIcon" onClick={props.clicked}>
+        <div style={{...props.myStyle}} className="burgermenuIcon" onClick={props.clicked}>
             <p></p>
             <p></p>
             <p></p>

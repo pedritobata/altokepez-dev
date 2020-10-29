@@ -130,8 +130,8 @@ const Testimonials = (props) => {
         style={{
           // 87 es el valor del ancho del container en Home. entonces sobre esa medida hay que 
           // posicionar el carrusel
-          width: `calc(${props.comments.length / testimoniesPerPage} * 87vw`,
-          transform: `translateX(${-89 * page}vw)`
+          width: `calc(${props.comments.length / testimoniesPerPage} * 87.5vw`,
+          transform: `translateX(${-87.5 * page}vw)`
         }}
       >
         {props.comments.map((item) => {

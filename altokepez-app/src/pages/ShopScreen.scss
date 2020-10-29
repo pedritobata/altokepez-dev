@@ -5,14 +5,57 @@
 }
 
 .shopscreen__banner{
+    background-image : url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'); 
+    background-position : center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.shopscreen__banner  > h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
 }
 
 .shopscreen__dropdown{
+    border: 1px solid black;
+    position: relative;
+    margin: 1rem auto;
+    width: 60vw;
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
 
+.shopscreen__dropdown > h4{
+    margin: 0;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-right: 1.2rem;
+    font-style: monospace;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+   
+}
+
+.shopscreen__dropdown > i{
+    align-self: flex-start;
 }
 
 .shopscreen__dropdownItems{
+    position: absolute;
+    display: none;
+    border: 1px solid black;
+}
+
+.shopscreen__dropdownItems--show{
 
 }
 
