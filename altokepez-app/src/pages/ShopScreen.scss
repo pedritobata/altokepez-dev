@@ -26,12 +26,16 @@
     position: relative;
     margin: 1rem auto;
     width: 60vw;
-    padding: 0.5rem 0.7rem;
+    padding: 0.6rem 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     vertical-align: middle;
+}
+
+.shopscreen__dropdown:active{
+    border: 1.2px solid black;
 }
 
 .shopscreen__dropdown > h4{
@@ -51,16 +55,22 @@
 
 .shopscreen__dropdownItems{
     position: absolute;
-    display: none;
     border: 1px solid black;
-}
-
-.shopscreen__dropdownItems--show{
-
+    margin: 0;
+    transition: opacity 0.4s ease-in-out;
+    list-style: none;
+    padding: 0;
+   
 }
 
 .shopscreen__dropdownItem{
+    text-transform: uppercase;
+    padding-left: 7px;
+    padding-top: 5px;
+}
 
+.shopscreen__dropdownItem:hover{
+    background-color: rgb(245, 241, 241);
 }
 
 .shopscreen__products{
