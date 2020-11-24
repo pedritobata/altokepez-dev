@@ -12,6 +12,7 @@ import Icon from "../../components/Icon/Icon";
 import FooterWeb from "../../containers/FooterWeb/FooterWeb";
 import { Controller, Scene } from "react-scrollmagic";
 import FlatArrow from "../../components/UI/FlatArrow";
+import toshiImage from '../../assets/images/toshi-fire.jpg';
 
 class Home extends React.Component {
   constructor(props) {
@@ -80,7 +81,7 @@ class Home extends React.Component {
               triggerHook="end"
             >
               <img
-                src="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-0/c0.34.206.206a/p206x206/169552_418773321526941_1185790091_o.jpg?_nc_cat=108&_nc_sid=cdbe9c&_nc_eui2=AeFYMq8Ctj0sVHANgDXN9fFmqVwEOX8AMfupXAQ5fwAx--4F8EhDx7kTMuRwCa3GiY0&_nc_ohc=KJWoUUh0k3MAX_OSW5T&_nc_ht=scontent.flim9-1.fna&_nc_tp=27&oh=071342ced36873ae6b496d6c9a599696&oe=5F94A3CB"
+                src={toshiImage}
                 alt="Altoke pez"
                 className="introduction__image"
               />
@@ -111,22 +112,22 @@ class Home extends React.Component {
             <RecommendedMeal
               id="recommended1"
               title="Cachetitos de Róbalo"
-              image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/54079_418776008193339_1635302210_o.jpg?_nc_cat=105&ccb=2&_nc_sid=e007fa&_nc_ohc=XBbTC0hjjasAX_qAtb-&_nc_ht=scontent.flim9-1.fna&oh=59867def729c2a8f15c31c0e46626916&oe=5FB60E0D"
+              image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/55504_418774461526827_2011798023_o.jpg?_nc_cat=100&ccb=2&_nc_sid=cdbe9c&_nc_eui2=AeFxI-qHohANka806_ESfDl8VlIEjGJaB59WUgSMYloHn6P1yTL0JbD-TzqVfZjLEYU&_nc_ohc=ZcNBQp45Y6oAX-59B6p&_nc_ht=scontent.flim9-1.fna&oh=2fda1f1bcf3948077c2fcaed949e4b4a&oe=5FE2B2FA"
             />
             <RecommendedMeal
               id="recommended2"
               title="Tallarines salteados"
-              image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/80308779_3309508445786733_2992348077840400384_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=NQCuBTBA5MsAX-UTJuh&_nc_ht=scontent.flim9-1.fna&oh=e3071e79e0f01476f8ce520cf1cf3a1f&oe=5F9D29F4"
+              image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/80308779_3309508445786733_2992348077840400384_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_eui2=AeG68MztRh-sRogCIqmYGaS7mXGOFnNtJjCZcY4Wc20mMA5RBnbXT85_r4AHADQZbZE&_nc_ohc=cH9ePRfI7_AAX8r3VNp&_nc_ht=scontent.flim9-1.fna&oh=a899b2f24e4b0694dce925f9f5aacf71&oe=5FE06674"
             />
             <RecommendedMeal
               id="recommended3"
-              title="Combinado de Calamar"
-              image="https://scontent.flim9-1.fna.fbcdn.net/v/t31.0-8/461703_285899748147633_33065499_o.jpg?_nc_cat=101&_nc_sid=7aed08&_nc_ohc=S57X7po5Q1kAX8RbZI8&_nc_ht=scontent.flim9-1.fna&oh=c62eb38c3643365a8fd1771b9c1077a6&oe=5F9ED01D"
+              title="Combinado de pescado"
+              image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/68646787_2470779802979058_3805730311501774848_o.jpg?_nc_cat=111&ccb=2&_nc_sid=9267fe&_nc_eui2=AeEczeL31uCOiblcvjxuzwa9qZMmoIZXfE-pkyaghld8Txc5banfiiPbLDyhUwlQ6CQ&_nc_ohc=_4B3sQ1e5R0AX9xQNzD&_nc_ht=scontent.flim9-1.fna&oh=82e67502203052d98bcadc97dbd2628d&oe=5FE325C9"
             />
             <RecommendedMeal
               id="recommended4"
               title="Leche de Tigre"
-              image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/79908155_3319135381490706_6780833648972136448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=8024bb&_nc_ohc=SOZDw-87VMUAX97wjyb&_nc_ht=scontent.flim9-1.fna&oh=f9dea9634bed366d9a63c3eef9a68e70&oe=5FB694D7"
+              image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/79908155_3319135381490706_6780833648972136448_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_eui2=AeHawir4JGjba0lJubE8wv5oHTsG2pkU5_cdOwbamRTn9x3RHbip4tz84ylJdvwy8mw&_nc_ohc=_sg8y8-lm9AAX8VsGhj&_nc_ht=scontent.flim9-1.fna&oh=efe5806e9b4f02df4040b8f6a9f0a130&oe=5FE21657"
             />
           <FlatArrow  position={{bottom: "-1.6rem", right: "0.5rem"}} text="Más platos a la carta"  link="/"/>
           </div>

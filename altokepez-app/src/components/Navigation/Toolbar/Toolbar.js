@@ -4,11 +4,14 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 import CatchyBox from "../../CatchyBox/CatchyBox";
 import Icon from "../../Icon/Icon";
 import { mainIconDefaultSize } from "../../../shared/commons/css-constants";
-import { NavLink, withRouter, Link } from "react-router-dom";
+import { NavLink, withRouter, Link , useHistory} from "react-router-dom";
 import BurgerMenuIcon from "../../../containers/Sidedrawer/BurgerMenuIcon/BurgerMenuIcon";
 
 const Toolbar = (props) => {
   const [sticky, setSticky] = useState("");
+
+  const history = useHistory();
+  // console.log("history",history);
 
   const currentScreen = props.location.pathname;
 
@@ -61,7 +64,7 @@ const Toolbar = (props) => {
         </div>
         <div className="header__main">
           <h2 className="main-title main-title--chirrin">
-            <Link to="/">al toke pez</Link>
+            <Link to="/" style={{color: history.location.pathname.includes("shop") ? '#f0003f' : ''}}>al toke pez</Link>
           </h2>
         </div>
         <div className="header__right">

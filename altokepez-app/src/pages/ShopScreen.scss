@@ -9,7 +9,7 @@
     background-position : center; 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 .shopscreen__dropdown{
     border: 1px solid black;
     position: relative;
-    margin: 1rem auto;
+    margin: 1rem auto .5rem;
     width: 60vw;
     padding: 0.6rem 0.7rem;
     display: flex;
@@ -38,6 +38,12 @@
     border: 1.2px solid black;
 }
 
+.shopscreen__dropdownCaption{
+    text-align: center;
+    color: rgb(94, 93, 93);
+    font-style: oblique;
+}
+
 .shopscreen__dropdown > h4{
     margin: 0;
     display: inline-block;
@@ -46,11 +52,13 @@
     font-style: monospace;
     text-transform: uppercase;
     font-size: 1.1rem;
-   
+    color: var(--red-catchy);
 }
 
 .shopscreen__dropdown > i{
-    align-self: flex-start;
+    // align-self: flex-start;
+    font-size: 1.3rem;
+    padding-bottom: .3rem;
 }
 
 .shopscreen__dropdownItems{
@@ -60,7 +68,7 @@
     transition: opacity 0.4s ease-in-out;
     list-style: none;
     padding: 0;
-   
+   background-color: white;
 }
 
 .shopscreen__dropdownItem{
@@ -74,7 +82,8 @@
 }
 
 .shopscreen__products{
-
+    margin-top: 2rem;
+    // padding: 0 .5rem;
 }
 
 
