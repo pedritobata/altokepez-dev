@@ -12,7 +12,9 @@ a.productshopping{
     justify-content: space-between;
     align-items: center;
     height: 22.5vh;
-    box-shadow: 0 0 25px -20px;
+    box-shadow: 0 0 12px -10px;
+    border-radius: 6px;
+    margin: .75rem 0;
 }
 
 .productshopping:focus{
@@ -21,8 +23,8 @@ a.productshopping{
 
 .productshopping > img{
     max-width: 150px;
-    height: 100%;
-    object-fit: cover;
+    height: 90%;
+    object-fit: contain;
 }
 
 .productshopping__info{
@@ -35,11 +37,11 @@ a.productshopping{
 
 .productshopping__title{
    font-size: 1rem;
-   font-weight: 800;
+   font-family: SofiaProBold;
 }
 
 .productshopping__description{
-    line-height: 1.3;
+    line-height: 1.2;
     font-size: 1.02rem;
 }
 

@@ -5,7 +5,7 @@ import './ProductShopping.scss';
 const ProductShopping = props => {
 
     return (
-        <Link className="productshopping">
+        <Link to="#" className="productshopping">
             <img src={props.image} 
             alt=""/>
             <div className="productshopping__info">

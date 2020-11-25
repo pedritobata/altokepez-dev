@@ -48,7 +48,7 @@ const ShopScreen = (props) => {
         }}
       >
         <h4>{categorySelected}</h4>
-        <i class="fas fa-caret-down"></i>
+        <i className="fas fa-caret-down"></i>
         <ul
           ref={dropdownRef}
           className="shopscreen__dropdownItems"
