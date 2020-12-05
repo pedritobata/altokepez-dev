@@ -49,7 +49,7 @@ const Toolbar = (props) => {
         this.classList.remove("activeLink");
       });
     });
-  }, []);
+  });
 
   return (
     <header className={`container-v1 header ${sticky}`}>

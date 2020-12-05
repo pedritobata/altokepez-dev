@@ -35,7 +35,8 @@
 
 .introduction__image{
     width: 35%;
-    object-fit: contain;
+    height: 80vh;
+    object-fit: cover;
     box-shadow: 2px -2px 16px -9px rgba(0,0,0, .75);
 }
 

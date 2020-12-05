@@ -29,7 +29,7 @@ class Home extends React.Component {
         {
           photo:
             "http://cdn.shopify.com/s/files/1/0414/0069/6999/files/image-13.jpg?v=1593146872",
-          name: "Chinen",
+          name: "Toshi",
           comment:
             "Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Sunmi is worth much more!",
         },
@@ -98,7 +98,7 @@ class Home extends React.Component {
               propio flow, pongo a disposición de tu paladar y bajo tu propia
               responsabilidad....sólo bromeaba!. Aunque estos platos sí van muy
               en serio, así que antes de que se me queme esta chita chapa tus
-              monedas y haz tus pedidos al toque pes!!.
+              monedas y haz tus pedidos al toque pez!!.
             </p>
             <cite className="introduction__author">
               <p></p> Tomás Matsufuji
