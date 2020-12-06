@@ -2,7 +2,6 @@
 
 .shopscreen{
    background-color: #fafafa; 
-   height: 100vh;
 }
 
 .shopscreen__banner{
@@ -22,10 +21,18 @@
     font-size: 1.6rem;
 }
 
+.shopscreen__categoryTitle{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+
 .shopscreen__dropdown{
     border: 1px solid black;
     position: relative;
     margin: 1rem auto .5rem;
+    z-index: 10;
     width: 60vw;
     padding: 0.6rem 0.7rem;
     display: flex;
@@ -53,6 +60,7 @@
     font-style: monospace;
     text-transform: uppercase;
     font-size: 1.1rem;
+    font-weight: bold;
     // color: var(--red-catchy);
 }
 
@@ -87,5 +95,23 @@
     padding: 0 .5rem;
 }
 
+
+// Desktop
+@media (min-width: $user-icon-disapear-mobile-breakpoint){
+    .shopscreen__products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+        margin: 0 5%;
+    }
+
+    .shopscreen__dropdown{
+        width: 22vw;
+    }
+
+    .shopscreen__banner{
+        height: 30vh;
+    }
+}
 
 

@@ -37,6 +37,12 @@ const ShopScreen = (props) => {
 
   return (
     <section className="shopscreen" onClick={() => setShowDropdownCategories(false)}>
+      {/* <div className="shopscreen__complementos">
+        <span>Agrega bebidas y guarniciones</span>
+        <div className="shopscreen__complementosArrow">
+          <i className="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div> */}
       <div className="shopscreen__banner">
         <h2>Qué comemos hoy?</h2>
       </div>
@@ -66,11 +72,45 @@ const ShopScreen = (props) => {
         </ul>
       </div>
       <p className="shopscreen__dropdownCaption">Despliega para ver más categorías</p>
+      <h5 className="shopscreen__categoryTitle">{categorySelected.toLowerCase()}</h5>
       <div className="shopscreen__products">
             <ProductShopping title="Ceviche Mixto"
             description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
             price="S/.12.00"
             image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+             <ProductShopping title="Ceviche Mixto"
+            description="Ceviche tradicional a base de Pescado, Pota, pulpo, cebolla y acompañado con canchita, camote, lechuga, yuyo y choclo"
+            price="S/.12.00"
+            image="https://scontent.flim9-1.fna.fbcdn.net/v/t1.0-9/29790443_1699615846789241_4916546054447164864_n.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_eui2=AeHr_2AsMZ0erLp8DkY-sKNdYL9IrZuOjgBgv0itm46OAPtp9DOI8ED0PeedBr64clU&_nc_ohc=UbKl0UZePpkAX-RzZMA&_nc_ht=scontent.flim9-1.fna&oh=1e7ca09783427dee37afa675df1327bf&oe=5FE2638E" /> 
+
       </div>
     </section>
   );
