@@ -5,7 +5,12 @@ import './ProductShopping.scss';
 const ProductShopping = props => {
 
     return (
-        <Link to="#" className="productshopping">
+        <Link to={{
+            pathname: `/shop/products`,
+            state: {
+                id: props.productId
+            }
+        }} className="productshopping">
             <img src={props.image} 
             alt=""/>
             <div className="productshopping__info">
