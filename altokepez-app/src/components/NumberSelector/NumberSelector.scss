@@ -1,0 +1,43 @@
+
+.numberSelector{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    width: 7rem;
+    height: 80%;
+    box-sizing: border-box;
+    margin-bottom: .3rem;
+}
+
+.numberSelector__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.numberSelector__buttons{
+    display: grid;
+   text-align: center;
+   border-left: 1px solid black;
+   color: red;
+   font-weight: 900;
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+
+.numberSelector__buttons > :first-child{
+    border-bottom: 1px solid black;
+    
+}
+
+.numberSelector__buttons div:hover{
+  color: black;
+   
+}
+
+.numberSelector__buttons div:active{
+    background-color: rgba(211, 211, 211, 0.4); 
+}

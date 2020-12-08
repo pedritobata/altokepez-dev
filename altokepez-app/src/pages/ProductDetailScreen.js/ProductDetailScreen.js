@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
+import NumberSelector from "../../components/NumberSelector/NumberSelector";
 import Button from "../../components/UI/Button/Button";
 import "./ProductDetailScreen.scss";
+import FlatArrow from "../../components/UI/FlatArrow";
 
 const ProductDetailScreen = (props) => {
   const [product, setProduct] = useState();
+  const [qty, setQty] = useState(1);
 
+  // Effects
   useEffect(() => {
     //cargar producto de la BD
     console.log("Param recceived:", props.location);
   }, []);
+
+
+  // Handlers
+  const changeNumberSelectorHandler = (selectedQty) => {
+    setQty(selectedQty);
+  }
 
   return (
     <article className="productDetail">
@@ -18,23 +28,41 @@ const ProductDetailScreen = (props) => {
         alt="foto"
       />
       <div className="productDetail__info">
-          <h3 className="productDetail__title">Ceviche Mixto</h3>
-          <span>S./ 12.90</span>
-          <div className="productDetail__rating">
-              {
-                  Array.from({length: 5}).map(star => <i className="fas fa-star"></i>)
-              }
+        <div className="productDetail__infoTop">
+          <div className="productDetail__infoTop--left">
+            <h3 className="productDetail__title">Ceviche Mixto</h3>
+            <span className="productDetail__price">S/ 12.90</span>
+            <div className="productDetail__rating">
+              {Array.from({ length: 5 }).map((star) => (
+                <i className="fas fa-star"></i>
+              ))}
+            </div>
           </div>
-          <p className="productDetail__description">
-          Calf-length dress in airy, textured cotton fabric with a printed pattern Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus Product Details Inspired by traditional blockprinting techniques in India, our own in-house.
-          </p>
-          <Button value="Agregar al pedido"></Button>
+          <div className="productDetail__infoTop--right">
+            <NumberSelector click={changeNumberSelectorHandler} />
+            <span className="productDetail__subtotal">{`S/ ${(qty * 12.9).toFixed(2)}`}</span>
+          </div>
+        </div>
+        <p className="productDetail__description">
+          Calf-length dress in airy, textured cotton fabric with a printed
+          pattern Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id,
+          varius estibulum ante ipsum primis in faucibus Product Details
+          Inspired by traditional blockprinting techniques in India, our own
+          in-house.
+        </p>
+        <Button
+          style={{ padding: "0.9rem 1.1rem" }}
+          value="Agregar al pedido"
+        ></Button>
+        <FlatArrow
+          style={{ fontSize: "1.2rem", marginLeft: "10px" }}
+          position={{ bottom: "0rem", right: "0.5rem" }}
+          text="Regresar"
+          link="/"
+        />
       </div>
-      <hr/>
-      <div className="productDetail__comments">
-
-      </div>
-
+      <hr />
+      <div className="productDetail__comments"></div>
     </article>
   );
 };

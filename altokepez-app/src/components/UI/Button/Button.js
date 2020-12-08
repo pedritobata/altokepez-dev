@@ -8,7 +8,7 @@ const Button = (props) => {
     }
 
     return (
-        <button className={`button ${props.light ? 'button-light' : ''}`} type="submit">{props.value}</button>
+        <button {...props} className={`button ${props.light ? 'button-light' : ''}`} type="submit">{props.value}</button>
     );
 }
 
